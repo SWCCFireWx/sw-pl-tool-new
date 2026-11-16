@@ -1,0 +1,106 @@
+# Updates the PL data at 8:00 AM and 9:00 PM Mountain Time (New Mexico), all year.
+#
+# GitHub schedules run on UTC and can start them late (sometimes over an hour at busy times), and Mountain
+# Time shifts between MDT (UTC-6) and MST (UTC-7). So each slot is scheduled three times, an hour apart,
+# and the "Check the time" step lets a run through only when:
+#   • it is 8–10 AM or 9–11 PM in America/Denver, and
+#   • that slot hasn't already run today (looked up in data/archive/history.csv).
+# The first of the three that lands in the window does the work; the others stop after a few seconds.
+#
+# Each run: pulls the NPSG 7-Day outlook and the SWA/OOA Type 1 IHC crews and IMTs from the SWCC
+# SharePoint workbooks, applies the newest ERC/BI file in uploads/, counts new fire starts (WFIGS) and
+# summarizes RAWS (FEMS weather observations) and ASOS/AWOS (Iowa Environmental Mesonet), writes data/current.json, archives the run in data/archive/,
+# builds reports/SWA_PL_latest.pdf and .xlsx, and commits. GitHub Pages then republishes the site.
+name: Update PL data
+
+on:
+  schedule:
+    - cron: "7 14 * * *"   # 8 AM MDT  / 7 AM MST (skipped)
+    - cron: "7 15 * * *"   # 9 AM MDT (backup) / 8 AM MST
+    - cron: "7 16 * * *"   # 10 AM MDT / 9 AM MST (backups)
+    - cron: "7 3 * * *"    # 9 PM MDT  / 8 PM MST (skipped)
+    - cron: "7 4 * * *"    # 10 PM MDT (backup) / 9 PM MST
+    - cron: "7 5 * * *"    # 11 PM MDT / 10 PM MST (backups)
+  workflow_dispatch:        # "Run workflow" button on the Actions tab runs it immediately
+    inputs:
+      redo_weather_from:
+        description: "Optional: re-pull and re-check RAWS + ASOS/AWOS from this date (YYYY-MM-DD) up to the day before yesterday"
+        required: false
+        default: ""
+  push:                     # uploading an ERC/BI file to the uploads/ folder updates the site right away
+    paths:
+      - "uploads/**"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: update-pl-data
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main        # the newest version, not the one that existed when the run was queued
+          fetch-depth: 0   # full history, so the newest file in uploads/ can be found by commit time
+
+      - name: Check the time (America/Denver)
+        id: when
+        run: |
+          NOW=$(TZ=America/Denver date '+%Y-%m-%d %H:%M %Z'); H=$(TZ=America/Denver date +%-H); TODAY=$(TZ=America/Denver date +%F)
+          echo "Local time: $NOW"
+          if [ "${{ github.event_name }}" != "schedule" ]; then echo "run=true" >> "$GITHUB_OUTPUT"; exit 0; fi
+          if   [ "$H" -ge 8 ]  && [ "$H" -le 10 ]; then SLOT="morning"; LO=8;  HI=10
+          elif [ "$H" -ge 21 ] && [ "$H" -le 23 ]; then SLOT="evening"; LO=21; HI=23
+          else echo "Outside the 8–10 AM and 9–11 PM windows; nothing to do."; echo "run=false" >> "$GITHUB_OUTPUT"; exit 0; fi
+          DONE=$(awk -F, -v d="$TODAY" -v lo="$LO" -v hi="$HI" 'NR>1 && substr($1,1,10)==d { h=substr($1,12,2)+0; if (h>=lo && h<=hi) n++ } END { print n+0 }' data/archive/history.csv 2>/dev/null || echo 0)
+          if [ "$DONE" -gt 0 ]; then echo "The $SLOT run already happened today; skipping."; echo "run=false" >> "$GITHUB_OUTPUT"
+          else echo "Running the $SLOT update."; echo "run=true" >> "$GITHUB_OUTPUT"; fi
+
+      - uses: actions/setup-node@v4
+        if: steps.when.outputs.run == 'true'
+        with:
+          node-version: "20"
+
+      - name: Check the calculations
+        if: steps.when.outputs.run == 'true'
+        run: node tests/calc.test.js && node tests/sources.test.js && node tests/archive.test.js && node tests/review.test.js
+
+      - name: Pull data, apply uploaded ERC/BI file, archive the run
+        if: steps.when.outputs.run == 'true'
+        continue-on-error: true   # still build the briefing from the last good data if a source is down
+        env:
+          REDO: ${{ github.event.inputs.redo_weather_from }}
+        run: |
+          if [[ "$REDO" =~ ^[0-9]{4}-[0-9]{2}-[0-9]{2}$ ]]; then node scripts/update-data.mjs "--redo-weather-from=$REDO"
+          else node scripts/update-data.mjs; fi
+
+      - name: Build PDF and Excel briefing
+        if: steps.when.outputs.run == 'true'
+        run: |
+          npm install --no-save --no-package-lock playwright@1.48.2
+          npx playwright install --with-deps chromium
+          node scripts/make-report.mjs
+
+      # Saves only the generated files (data/ and reports/) on top of the NEWEST version of the repository,
+      # so uploads or edits made while the job was running are never undone and never cause a merge conflict.
+      - name: Save results to the repository
+        if: steps.when.outputs.run == 'true'
+        run: |
+          git config user.name "pl-data-bot"
+          git config user.email "pl-data-bot@users.noreply.github.com"
+          MSG="Update PL data $(TZ=America/Denver date '+%Y-%m-%d %H:%M %Z')"
+          for attempt in 1 2 3 4 5; do
+            git fetch --quiet origin main
+            git reset --quiet --mixed origin/main          # point at the newest main; our generated files stay on disk
+            git add --ignore-removal data reports           # stage only what this run wrote
+            if git diff --cached --quiet; then echo "No changes to save."; exit 0; fi
+            git commit --quiet -m "$MSG"
+            if git push --quiet origin HEAD:main; then echo "Saved: $MSG"; exit 0; fi
+            echo "The repository changed while saving; trying again ($attempt of 5)..."
+            sleep $((attempt * 5))
+          done
+          echo "Could not save after 5 tries."; exit 1
