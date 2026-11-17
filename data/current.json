@@ -1,10 +1,10 @@
 {
  "schema": 1,
  "meta": {
-  "asOf": "2026-11-16T15:03",
+  "asOf": "2026-11-16T22:00",
   "preparedBy": "",
   "notes": "Seeded from 2026_SWA_PL_Dashboard_V3_SHOULDER_SEASON_MASTER.xlsx",
-  "source": "automated pull 2026-11-16T15:03"
+  "source": "automated pull 2026-11-16T22:00"
  },
  "preset": "standard",
  "weights": {
@@ -18,10 +18,10 @@
   "rating": "Minimum",
   "complex": 0,
   "t3": 0,
-  "updated": "2026-11-16T15:03",
+  "updated": "2026-11-16T22:00",
   "escapes": 0,
   "escapeList": [],
-  "fetchedAt": "2026-11-16T15:03",
+  "fetchedAt": "2026-11-16T22:00",
   "source": "WFIGS active incidents (auto)",
   "incidents": [],
   "activeTotal": 0,
@@ -162,7 +162,7 @@
    "remarks": ""
   }
  ],
- "imtsUpdated": "2026-11-16T15:03",
+ "imtsUpdated": "2026-11-16T22:00",
  "crews": [
   {
    "name": "Aravaipa",
@@ -426,7 +426,7 @@
   }
  ],
  "ooaCrews": [],
- "crewsUpdated": "2026-11-16T15:03",
+ "crewsUpdated": "2026-11-16T22:00",
  "outlook": {
   "startDate": "2026-11-16",
   "values": {
@@ -568,7 +568,7 @@
   },
   "updated": "2026-11-16",
   "source": "NPSG 7-Day (auto)",
-  "fetchedAt": "2026-11-16T15:03",
+  "fetchedAt": "2026-11-16T22:00",
   "missing": []
  },
  "danger": {
@@ -670,12 +670,12 @@
  },
  "imtsSource": {
   "source": "SWCC SharePoint (auto)",
-  "fetchedAt": "2026-11-16T15:03",
+  "fetchedAt": "2026-11-16T22:00",
   "lastUpdate": "0700 11/16/2026 DH"
  },
  "crewsSource": {
   "source": "SWCC SharePoint (auto)",
-  "fetchedAt": "2026-11-16T15:03",
+  "fetchedAt": "2026-11-16T22:00",
   "lastUpdate": "11/12/2026 07:00",
   "ooaLastUpdate": "11/12/2026 07:00"
  },
@@ -848,7 +848,7 @@
   ],
   "placedByPsa": true,
   "layer": "https://services3.arcgis.com/T4QMspbfLg3qTGWY/arcgis/rest/services/WFIGS_Incident_Locations_YearToDate/FeatureServer/0",
-  "fetchedAt": "2026-11-16T15:03",
+  "fetchedAt": "2026-11-16T22:00",
   "source": "WFIGS incident locations (auto)"
  },
  "raws": {
@@ -2714,7 +2714,7 @@
   ],
   "asosError": "mesonet.agron.iastate.edu answered 429",
   "source": "FEMS RAWS + (no) IEM ASOS/AWOS observations (auto, quality-checked)",
-  "fetchedAt": "2026-11-16T15:03"
+  "fetchedAt": "2026-11-16T22:00"
  },
  "femsNfdr": {
   "date": "2026-11-15",
@@ -3294,6 +3294,6 @@
    }
   ],
   "source": "FEMS NFDRS observations (auto)",
-  "fetchedAt": "2026-11-16T15:03"
+  "fetchedAt": "2026-11-16T22:00"
  }
 }
