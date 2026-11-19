@@ -1,0 +1,45 @@
+2026-11-19T09:22
+NICC: no Southwest row found
+SWCC: no number under the Preparedness Level header
+
+--- nifc.gov/nicc ---
+National Interagency Coordination Center (NICC) Skip to main content National Interagency Coordination Center Toggle Font Size Toggle OpenDyslexic Toggle Dyslexia-friendly black-on-creme color scheme Contact Us Keywords Home Incident Information Incident Management Situation Report (IMSR) IMSR Map Geographic Areas Predictive Services Intelligence Weather Fuels/Fire Danger Outlooks Logistics Aviation Overhead Crews Equipment & Supplies Incident Procurement Reference Documents Airspace NMAC All Hazard Response Contact Home National Interagency Coordination Center All National Interagency Standards for Resource Mobilization change requests are due no later than close of business on November 20, 2026. Please fill out the NISRM Change Request Form with suggested edits or changes. Located in Boise, Idaho, the National Interagency Coordination Center (NICC) serves as the focal point for coordinating the mobilization of resources to wildland fires and other incidents throughout the United States. The NICC also provides Predictive Services related products designed to be used by the internal wildland fire community for critical decision-making surrounding incident management and resource allocation. PL 1 Current Preparedness Level Current National Statistics 6 Incidents Total Number of Large Fires 1 Total New Large Fires 69,887 Incidents Year-to-date Wildfires 129,562 Acres Acres Burned on Large Fires 244 Personnel Assigned to Wildfires 9,496,929 Acres Year-to-date Acres Burned Last Updated: Thursday, November 19, 2026 - 06:18 GACC Preparedness Levels Geographic Area Preparedness Level National Interagency Coordination Center National Interagency Fire Center 3833 S. Development Ave. Boise, Idaho, 83705 NIFC Homepage Social Facebook Twitter Flickr YouTube LinkedIn About About NIFC FAQ Map and Directions Phone Directory Office of Civil Rights nifc.gov An official website of the Department of the Interior About DOI.gov Accessibility statement FOIA requests No FEAR Act data Office of the Inspector General Budget & performance reports Agency financial reports Disclaimer Privacy policy Vulnerability disclosure policy Cummings Act notices Looking for U.S. government information and services? Visit USA.gov The National Interagency Fire Center is committed to making its information and communication technologies accessible to individuals with disabilities by meeting or exceeding the requirements of Section 508 of the Rehabilitation Act of 1973, as amended. To meet this commitment, we continue to monitor and update our content to make sure our documents meet these standards.
+
+--- gacc.nifc.gov/swcc (under the PL header) ---
+PreparednessLevel.gif" alt="Wildland Fire Reports" width="100%" />
+            </div><!-- Close: container_img_frontt --> 
+
+			<div class="LS_Panel_Block">
+                <div id="PREP_LEVEL"></div>
+<script type="text/javascript">
+ $.get('predictive/intelligence/daily/UPLOAD_Files_toSWCC/A_01_10_PREPAREDNESS_LEVEL.csv', function(data) {
+	var build = '<table border="0"cellpadding="0" cellspacing="0" style="border-collapse: collapse;" width="100%">\n';
+	var rows = data.split("\n");
+	rows.forEach( function getvalues(thisRow) {
+	build += "<tr>\n";
+	var columns = thisRow.split(",");
+	for(var i=0;i<columns.length;i++){ build += "<td style: width=33%>" + columns[i] + "</td>\n"; }   			
+	build += "</tr>\n";
+	})
+	build += "</table>";
+	$('#PREP_LEVEL').append(build);	
+ });</script>
+                <div id="PREP_LEVEL_TEXT"></div>
+<script type="text/javascript">
+ $.get('predictive/intelligence/daily/UPLOAD_Files_toSWCC/A_01_15_PREPAREDNESS_LEVEL_WEBSITE_WELCOME.csv', function(data) {
+	var build = '<table border="0"cellpadding="0" cellspacing="0" style="border-collapse: collapse;" width="100%">\n';
+	var rows = data.split("\n");
+	rows.forEach( function getvalues(thisRow) {
+	build += "<tr>\n";
+	var columns = thisRow.split(",");
+	for(var i=0;i<columns.length;i++){ build += "<td>" + columns[i] + "</td>\n"; }   			
+	build += "</tr>\n";
+	})
+	build += "</table>";
+	$('#PREP_LEVEL_TEXT').append(build);	
+ });</script>
+            <hr span style="width: 75%; margin: 5% auto 5% auto">
+    </div>
+            
+	<div class="LS_Welcome_Twitter">
+       <div class="container_img_front"><img src="images/

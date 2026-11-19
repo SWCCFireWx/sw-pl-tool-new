@@ -1,10 +1,10 @@
 {
  "schema": 1,
  "meta": {
-  "asOf": "2026-11-19T08:54",
+  "asOf": "2026-11-19T09:26",
   "preparedBy": "",
   "notes": "Seeded from 2026_SWA_PL_Dashboard_V3_SHOULDER_SEASON_MASTER.xlsx",
-  "source": "automated pull 2026-11-19T08:54"
+  "source": "automated pull 2026-11-19T09:26"
  },
  "preset": "standard",
  "weights": {
@@ -18,15 +18,17 @@
   "rating": "Minimum",
   "complex": 0,
   "t3": 0,
-  "updated": "2026-11-19T08:54",
+  "updated": "2026-11-19T09:22",
   "escapes": 0,
   "escapeList": [],
-  "fetchedAt": "2026-11-19T08:54",
+  "fetchedAt": "2026-11-19T09:22",
   "source": "WFIGS active incidents (auto)",
   "incidents": [],
   "activeTotal": 1,
   "unknownType": 1,
-  "startsAvg3": 0.7
+  "startsAvg3": 0.7,
+  "byAcres": [],
+  "noComplexity": 1
  },
  "imts": [
   {
@@ -162,7 +164,7 @@
    "remarks": ""
   }
  ],
- "imtsUpdated": "2026-11-19T08:54",
+ "imtsUpdated": "2026-11-19T09:22",
  "crews": [
   {
    "name": "Aravaipa",
@@ -568,109 +570,485 @@
   },
   "updated": "2026-11-19",
   "source": "NPSG 7-Day (auto)",
-  "fetchedAt": "2026-11-19T08:54",
+  "fetchedAt": "2026-11-19T09:22",
   "missing": []
  },
  "danger": {
-  "date": "2026-11-03",
+  "date": "2026-11-18",
   "rows": {
    "SW-01": {
-    "ercVal": 9,
-    "biVal": 8,
+    "ercVal": 18,
+    "biVal": 13.6,
     "ercPct": 45,
-    "biPct": 45
+    "biPct": 45,
+    "stations": 3,
+    "stationsListed": 3,
+    "missing": []
    },
    "SW-02": {
-    "ercVal": 18,
-    "biVal": 16.3,
+    "ercVal": 23.7,
+    "biVal": 19.1,
     "ercPct": 45,
-    "biPct": 45
+    "biPct": 45,
+    "stations": 3,
+    "stationsListed": 3,
+    "missing": []
    },
    "SW-03": {
-    "ercVal": 28,
-    "biVal": 18.7,
+    "ercVal": 36,
+    "biVal": 22.2,
     "ercPct": 45,
-    "biPct": 45
+    "biPct": 45,
+    "stations": 1,
+    "stationsListed": 1,
+    "missing": []
    },
    "SW-04": {
-    "ercVal": 12,
-    "biVal": 8.6,
+    "ercVal": 17,
+    "biVal": 9.8,
     "ercPct": 45,
-    "biPct": 45
+    "biPct": 45,
+    "stations": 3,
+    "stationsListed": 3,
+    "missing": []
    },
    "SW-05": {
-    "ercVal": 13,
-    "biVal": 11.6,
+    "ercVal": 17.3,
+    "biVal": 14.1,
     "ercPct": 45,
-    "biPct": 45
+    "biPct": 45,
+    "stations": 3,
+    "stationsListed": 3,
+    "missing": []
    },
    "SW-06N": {
-    "ercVal": 15,
-    "biVal": 14,
+    "ercVal": 19,
+    "biVal": 15.7,
     "ercPct": 45,
-    "biPct": 45
+    "biPct": 45,
+    "stations": 2,
+    "stationsListed": 2,
+    "missing": []
    },
    "SW-06S": {
-    "ercVal": 17,
-    "biVal": 15,
+    "ercVal": 21.5,
+    "biVal": 16.5,
     "ercPct": 45,
-    "biPct": 45
+    "biPct": 45,
+    "stations": 4,
+    "stationsListed": 4,
+    "missing": []
    },
    "SW-07": {
-    "ercVal": 15,
-    "biVal": 12.3,
+    "ercVal": 19.3,
+    "biVal": 13.4,
     "ercPct": 45,
-    "biPct": 45
+    "biPct": 45,
+    "stations": 3,
+    "stationsListed": 3,
+    "missing": []
    },
    "SW-08": {
-    "ercVal": 16.8,
-    "biVal": 14.6,
+    "ercVal": 20.8,
+    "biVal": 16.2,
     "ercPct": 45,
-    "biPct": 45
+    "biPct": 45,
+    "stations": 4,
+    "stationsListed": 4,
+    "missing": []
    },
    "SW-09": {
-    "ercVal": 21.3,
-    "biVal": 17.3,
+    "ercVal": 22,
+    "biVal": 17,
     "ercPct": 45,
-    "biPct": 45
+    "biPct": 45,
+    "stations": 3,
+    "stationsListed": 3,
+    "missing": []
    },
    "SW-10": {
-    "ercVal": 16,
-    "biVal": 13.1,
+    "ercVal": 20.5,
+    "biVal": 15.8,
     "ercPct": 45,
-    "biPct": 45
+    "biPct": 45,
+    "stations": 2,
+    "stationsListed": 2,
+    "missing": []
    },
    "SW-11": {
-    "ercVal": 18.5,
-    "biVal": 15.5,
+    "ercVal": 19,
+    "biVal": 17.8,
     "ercPct": 45,
-    "biPct": 45
+    "biPct": 45,
+    "stations": 2,
+    "stationsListed": 2,
+    "missing": []
    },
    "SW-12": {
-    "ercVal": 18.3,
-    "biVal": 15.5,
+    "ercVal": 21.3,
+    "biVal": 17.7,
     "ercPct": 45,
-    "biPct": 45
+    "biPct": 45,
+    "stations": 3,
+    "stationsListed": 3,
+    "missing": []
    },
    "SW-13": {
-    "ercVal": 13,
-    "biVal": 14,
+    "ercVal": 13.5,
+    "biVal": 14.1,
     "ercPct": 45,
-    "biPct": 45
+    "biPct": 45,
+    "stations": 2,
+    "stationsListed": 2,
+    "missing": []
    },
    "SW-14N": {
-    "ercVal": 16,
-    "biVal": 9.3,
+    "ercVal": 11.7,
+    "biVal": 10.5,
     "ercPct": 45,
-    "biPct": 45
+    "biPct": 45,
+    "stations": 3,
+    "stationsListed": 3,
+    "missing": []
    }
   },
-  "source": "Seeded from spreadsheet",
-  "fetchedAt": ""
+  "stations": [
+   {
+    "psa": "SW-01",
+    "id": 20207,
+    "name": "Tusayan",
+    "erc": 18.4,
+    "bi": 13.3,
+    "reported": true
+   },
+   {
+    "psa": "SW-01",
+    "id": 20212,
+    "name": "Dry Park",
+    "erc": 12.4,
+    "bi": 8.4,
+    "reported": true
+   },
+   {
+    "psa": "SW-01",
+    "id": 20213,
+    "name": "Frazier Wells",
+    "erc": 22.9,
+    "bi": 19.1,
+    "reported": true
+   },
+   {
+    "psa": "SW-02",
+    "id": 20115,
+    "name": "Moss Basin",
+    "erc": 24.2,
+    "bi": 18.5,
+    "reported": true
+   },
+   {
+    "psa": "SW-02",
+    "id": 20501,
+    "name": "Iron Springs",
+    "erc": 20,
+    "bi": 16,
+    "reported": true
+   },
+   {
+    "psa": "SW-02",
+    "id": 20509,
+    "name": "Stanton",
+    "erc": 26.1,
+    "bi": 22.7,
+    "reported": true
+   },
+   {
+    "psa": "SW-03",
+    "id": 45801,
+    "name": "Senator Wash",
+    "erc": 35.6,
+    "bi": 22.2,
+    "reported": true
+   },
+   {
+    "psa": "SW-04",
+    "id": 20402,
+    "name": "Piney Hill",
+    "erc": 20.4,
+    "bi": 14.2,
+    "reported": true
+   },
+   {
+    "psa": "SW-04",
+    "id": 290101,
+    "name": "Washington Pass",
+    "erc": 11.3,
+    "bi": 0,
+    "reported": true
+   },
+   {
+    "psa": "SW-04",
+    "id": 290102,
+    "name": "Albino",
+    "erc": 18.6,
+    "bi": 15.2,
+    "reported": true
+   },
+   {
+    "psa": "SW-05",
+    "id": 20209,
+    "name": "Flagstaff",
+    "erc": 14.3,
+    "bi": 13.5,
+    "reported": true
+   },
+   {
+    "psa": "SW-05",
+    "id": 20301,
+    "name": "Heber",
+    "erc": 18.2,
+    "bi": 14.9,
+    "reported": true
+   },
+   {
+    "psa": "SW-05",
+    "id": 20303,
+    "name": "Lakeside",
+    "erc": 19,
+    "bi": 14,
+    "reported": true
+   },
+   {
+    "psa": "SW-06N",
+    "id": 20601,
+    "name": "Globe",
+    "erc": 20.3,
+    "bi": 16.7,
+    "reported": true
+   },
+   {
+    "psa": "SW-06N",
+    "id": 20606,
+    "name": "Tonto Basin",
+    "erc": 17.5,
+    "bi": 14.6,
+    "reported": true
+   },
+   {
+    "psa": "SW-06S",
+    "id": 21005,
+    "name": "Columbine",
+    "erc": 14.2,
+    "bi": 13.5,
+    "reported": true
+   },
+   {
+    "psa": "SW-06S",
+    "id": 21007,
+    "name": "Muleshoe",
+    "erc": 23.6,
+    "bi": 17.5,
+    "reported": true
+   },
+   {
+    "psa": "SW-06S",
+    "id": 21202,
+    "name": "Saguaro",
+    "erc": 25.5,
+    "bi": 17.4,
+    "reported": true
+   },
+   {
+    "psa": "SW-06S",
+    "id": 21206,
+    "name": "Sasabe",
+    "erc": 22,
+    "bi": 17.4,
+    "reported": true
+   },
+   {
+    "psa": "SW-07",
+    "id": 290702,
+    "name": "Jemez",
+    "erc": 16.4,
+    "bi": 11.3,
+    "reported": true
+   },
+   {
+    "psa": "SW-07",
+    "id": 290801,
+    "name": "Tower",
+    "erc": 21.8,
+    "bi": 16.7,
+    "reported": true
+   },
+   {
+    "psa": "SW-07",
+    "id": 291302,
+    "name": "Grants",
+    "erc": 19,
+    "bi": 12.3,
+    "reported": true
+   },
+   {
+    "psa": "SW-08",
+    "id": 20401,
+    "name": "Alpine",
+    "erc": 22.2,
+    "bi": 16.4,
+    "reported": true
+   },
+   {
+    "psa": "SW-08",
+    "id": 292001,
+    "name": "Beaverhead",
+    "erc": 20.9,
+    "bi": 15.5,
+    "reported": true
+   },
+   {
+    "psa": "SW-08",
+    "id": 292008,
+    "name": "Slaughter",
+    "erc": 19.7,
+    "bi": 16.2,
+    "reported": true
+   },
+   {
+    "psa": "SW-08",
+    "id": 292009,
+    "name": "Pelona",
+    "erc": 20,
+    "bi": 16.6,
+    "reported": true
+   },
+   {
+    "psa": "SW-09",
+    "id": 292103,
+    "name": "Bosque",
+    "erc": 19.5,
+    "bi": 13.6,
+    "reported": true
+   },
+   {
+    "psa": "SW-09",
+    "id": 292702,
+    "name": "Hachita Valley/Hatchett",
+    "erc": 20.5,
+    "bi": 16.7,
+    "reported": true
+   },
+   {
+    "psa": "SW-09",
+    "id": 292903,
+    "name": "Dripping Springs",
+    "erc": 26,
+    "bi": 20.8,
+    "reported": true
+   },
+   {
+    "psa": "SW-10",
+    "id": 290210,
+    "name": "Truchas",
+    "erc": 18.4,
+    "bi": 13.1,
+    "reported": true
+   },
+   {
+    "psa": "SW-10",
+    "id": 291202,
+    "name": "Pecos",
+    "erc": 22.4,
+    "bi": 18.4,
+    "reported": true
+   },
+   {
+    "psa": "SW-11",
+    "id": 291501,
+    "name": "Mountainair",
+    "erc": 20.6,
+    "bi": 17.8,
+    "reported": true
+   },
+   {
+    "psa": "SW-11",
+    "id": 292102,
+    "name": "Chupadera",
+    "erc": 17.3,
+    "bi": 17.8,
+    "reported": true
+   },
+   {
+    "psa": "SW-12",
+    "id": 292203,
+    "name": "Smokey Bear",
+    "erc": 20,
+    "bi": 19.1,
+    "reported": true
+   },
+   {
+    "psa": "SW-12",
+    "id": 293002,
+    "name": "Mayhill",
+    "erc": 22.8,
+    "bi": 17,
+    "reported": true
+   },
+   {
+    "psa": "SW-12",
+    "id": 293003,
+    "name": "Mescal",
+    "erc": 21.1,
+    "bi": 16.9,
+    "reported": true
+   },
+   {
+    "psa": "SW-13",
+    "id": 418701,
+    "name": "Cedar",
+    "erc": 15.7,
+    "bi": 16.6,
+    "reported": true
+   },
+   {
+    "psa": "SW-13",
+    "id": 292301,
+    "name": "Eight Mile",
+    "erc": 10.9,
+    "bi": 11.5,
+    "reported": true
+   },
+   {
+    "psa": "SW-14N",
+    "id": 292301,
+    "name": "Eight Mile",
+    "erc": 10.9,
+    "bi": 11.5,
+    "reported": true
+   },
+   {
+    "psa": "SW-14N",
+    "id": 293101,
+    "name": "Batdraw",
+    "erc": 12.2,
+    "bi": 9.5,
+    "reported": true
+   },
+   {
+    "psa": "SW-14N",
+    "id": 293104,
+    "name": "Caprock",
+    "erc": 11.1,
+    "bi": 10.4,
+    "reported": true
+   }
+  ],
+  "source": "FEMS NFDR daily summary (auto)",
+  "fetchedAt": "2026-11-19T09:22",
+  "breakpoints": "data/erc_bi_breakpoints.csv"
  },
  "imtsSource": {
   "source": "SWCC SharePoint (auto)",
-  "fetchedAt": "2026-11-19T08:54",
+  "fetchedAt": "2026-11-19T09:22",
   "lastUpdate": "0700 11/19/2026 DH"
  },
  "crewsSource": {
@@ -869,34 +1247,34 @@
   ],
   "placedByPsa": true,
   "layer": "https://services3.arcgis.com/T4QMspbfLg3qTGWY/arcgis/rest/services/WFIGS_Incident_Locations_YearToDate/FeatureServer/0",
-  "fetchedAt": "2026-11-19T08:54",
+  "fetchedAt": "2026-11-19T09:22",
   "source": "WFIGS incident locations (auto)"
  },
  "raws": {
   "date": "2026-11-18",
   "byPsa": {
    "SW-01": {
-    "stations": 6,
+    "stations": 7,
     "stationsListed": 7,
     "rawsStations": 6,
-    "asosStations": 0,
-    "avgMaxTemp": 46,
-    "avgMinRh": 20.8,
+    "asosStations": 1,
+    "avgMaxTemp": 46.3,
+    "avgMinRh": 21.6,
     "lowestRh": 14,
     "maxGust": 15,
-    "avgPrecip": 0.15,
+    "avgPrecip": 0.13,
     "wettingRain": 2,
     "readingsDropped": 0,
     "windEvent": false,
     "windyStations": 0
    },
    "SW-02": {
-    "stations": 13,
+    "stations": 19,
     "stationsListed": 19,
     "rawsStations": 13,
-    "asosStations": 0,
-    "avgMaxTemp": 58.1,
-    "avgMinRh": 29.8,
+    "asosStations": 6,
+    "avgMaxTemp": 59.5,
+    "avgMinRh": 29.6,
     "lowestRh": 24,
     "maxGust": 22,
     "avgPrecip": 0.01,
@@ -906,13 +1284,13 @@
     "windyStations": 0
    },
    "SW-03": {
-    "stations": 6,
+    "stations": 11,
     "stationsListed": 11,
     "rawsStations": 6,
-    "asosStations": 0,
+    "asosStations": 5,
     "avgMaxTemp": 71.8,
-    "avgMinRh": 27.3,
-    "lowestRh": 21,
+    "avgMinRh": 26.1,
+    "lowestRh": 18,
     "maxGust": 15,
     "avgPrecip": 0,
     "wettingRain": 0,
@@ -921,87 +1299,87 @@
     "windyStations": 0
    },
    "SW-04": {
-    "stations": 6,
+    "stations": 10,
     "stationsListed": 10,
     "rawsStations": 6,
-    "asosStations": 0,
-    "avgMaxTemp": 48.3,
+    "asosStations": 4,
+    "avgMaxTemp": 49.5,
     "avgMinRh": 36.7,
     "lowestRh": 26,
     "maxGust": 22,
-    "avgPrecip": 0.02,
+    "avgPrecip": 0.01,
     "wettingRain": 0,
     "readingsDropped": 0,
     "windEvent": false,
     "windyStations": 0
    },
    "SW-05": {
-    "stations": 10,
+    "stations": 15,
     "stationsListed": 15,
     "rawsStations": 10,
-    "asosStations": 0,
-    "avgMaxTemp": 52.7,
-    "avgMinRh": 36.6,
+    "asosStations": 5,
+    "avgMaxTemp": 53.1,
+    "avgMinRh": 34.3,
     "lowestRh": 22,
     "maxGust": 26,
-    "avgPrecip": 0.01,
+    "avgPrecip": 0,
     "wettingRain": 0,
     "readingsDropped": 1,
     "windEvent": false,
     "windyStations": 0
    },
    "SW-06N": {
-    "stations": 10,
+    "stations": 22,
     "stationsListed": 22,
     "rawsStations": 10,
-    "asosStations": 0,
-    "avgMaxTemp": 64.7,
-    "avgMinRh": 40.2,
-    "lowestRh": 32,
+    "asosStations": 12,
+    "avgMaxTemp": 66.9,
+    "avgMinRh": 38.1,
+    "lowestRh": 31,
     "maxGust": 18,
-    "avgPrecip": 0.01,
-    "wettingRain": 0,
-    "readingsDropped": 0,
-    "windEvent": false,
-    "windyStations": 0
-   },
-   "SW-06S": {
-    "stations": 17,
-    "stationsListed": 29,
-    "rawsStations": 17,
-    "asosStations": 0,
-    "avgMaxTemp": 63.1,
-    "avgMinRh": 33.1,
-    "lowestRh": 12,
-    "maxGust": 23,
     "avgPrecip": 0,
     "wettingRain": 0,
     "readingsDropped": 0,
     "windEvent": false,
     "windyStations": 0
    },
+   "SW-06S": {
+    "stations": 28,
+    "stationsListed": 29,
+    "rawsStations": 17,
+    "asosStations": 11,
+    "avgMaxTemp": 65.8,
+    "avgMinRh": 32.9,
+    "lowestRh": 12,
+    "maxGust": 23,
+    "avgPrecip": 0.01,
+    "wettingRain": 1,
+    "readingsDropped": 0,
+    "windEvent": false,
+    "windyStations": 0
+   },
    "SW-07": {
-    "stations": 16,
+    "stations": 19,
     "stationsListed": 19,
     "rawsStations": 16,
-    "asosStations": 0,
-    "avgMaxTemp": 50.6,
-    "avgMinRh": 35.6,
+    "asosStations": 3,
+    "avgMaxTemp": 50.7,
+    "avgMinRh": 36.1,
     "lowestRh": 20,
     "maxGust": 34,
-    "avgPrecip": 0.04,
+    "avgPrecip": 0.03,
     "wettingRain": 2,
     "readingsDropped": 0,
     "windEvent": false,
     "windyStations": 0
    },
    "SW-08": {
-    "stations": 16,
+    "stations": 19,
     "stationsListed": 19,
     "rawsStations": 16,
-    "asosStations": 0,
-    "avgMaxTemp": 54.9,
-    "avgMinRh": 32.6,
+    "asosStations": 3,
+    "avgMaxTemp": 55.4,
+    "avgMinRh": 32.3,
     "lowestRh": 23,
     "maxGust": 29,
     "avgPrecip": 0.01,
@@ -1011,57 +1389,57 @@
     "windyStations": 0
    },
    "SW-09": {
-    "stations": 6,
+    "stations": 17,
     "stationsListed": 17,
     "rawsStations": 6,
-    "asosStations": 0,
-    "avgMaxTemp": 63.2,
-    "avgMinRh": 38.5,
+    "asosStations": 11,
+    "avgMaxTemp": 62.3,
+    "avgMinRh": 38.4,
     "lowestRh": 33,
-    "maxGust": 24,
-    "avgPrecip": 0.02,
+    "maxGust": 26,
+    "avgPrecip": 0.01,
     "wettingRain": 1,
     "readingsDropped": 0,
     "windEvent": false,
     "windyStations": 0
    },
    "SW-10": {
-    "stations": 5,
+    "stations": 10,
     "stationsListed": 10,
     "rawsStations": 5,
-    "asosStations": 0,
-    "avgMaxTemp": 46.8,
-    "avgMinRh": 23.2,
+    "asosStations": 5,
+    "avgMaxTemp": 49,
+    "avgMinRh": 27.5,
     "lowestRh": 8,
     "maxGust": 39,
-    "avgPrecip": 0.14,
+    "avgPrecip": 0.1,
     "wettingRain": 4,
     "readingsDropped": 0,
     "windEvent": false,
     "windyStations": 0
    },
    "SW-11": {
-    "stations": 4,
+    "stations": 6,
     "stationsListed": 6,
     "rawsStations": 4,
-    "asosStations": 0,
-    "avgMaxTemp": 53.3,
-    "avgMinRh": 45.3,
-    "lowestRh": 38,
-    "maxGust": 30,
-    "avgPrecip": 0.09,
+    "asosStations": 2,
+    "avgMaxTemp": 53.2,
+    "avgMinRh": 42.7,
+    "lowestRh": 34,
+    "maxGust": 37,
+    "avgPrecip": 0.07,
     "wettingRain": 1,
     "readingsDropped": 0,
     "windEvent": false,
     "windyStations": 0
    },
    "SW-12": {
-    "stations": 11,
+    "stations": 12,
     "stationsListed": 12,
     "rawsStations": 11,
-    "asosStations": 0,
-    "avgMaxTemp": 60.8,
-    "avgMinRh": 42.8,
+    "asosStations": 1,
+    "avgMaxTemp": 60.4,
+    "avgMinRh": 43.2,
     "lowestRh": 30,
     "maxGust": 50,
     "avgPrecip": 0.01,
@@ -1071,30 +1449,30 @@
     "windyStations": 2
    },
    "SW-13": {
-    "stations": 2,
+    "stations": 7,
     "stationsListed": 8,
     "rawsStations": 2,
-    "asosStations": 0,
-    "avgMaxTemp": 62,
-    "avgMinRh": 36.5,
-    "lowestRh": 14,
-    "maxGust": 25,
-    "avgPrecip": 0,
-    "wettingRain": 0,
-    "readingsDropped": 0,
+    "asosStations": 5,
+    "avgMaxTemp": 61.9,
+    "avgMinRh": 54.5,
+    "lowestRh": 31,
+    "maxGust": 41,
+    "avgPrecip": 0.02,
+    "wettingRain": 1,
+    "readingsDropped": 3,
     "windEvent": false,
-    "windyStations": 0
+    "windyStations": 1
    },
    "SW-14N": {
-    "stations": 4,
+    "stations": 8,
     "stationsListed": 8,
     "rawsStations": 4,
-    "asosStations": 0,
-    "avgMaxTemp": 61,
-    "avgMinRh": 67.5,
+    "asosStations": 4,
+    "avgMaxTemp": 58.8,
+    "avgMinRh": 72.6,
     "lowestRh": 56,
     "maxGust": 19,
-    "avgPrecip": 0.02,
+    "avgPrecip": 0.01,
     "wettingRain": 0,
     "readingsDropped": 0,
     "windEvent": false,
@@ -1171,6 +1549,18 @@
     "maxTemp": 45,
     "minRh": 21,
     "maxGust": 11,
+    "precip": 0,
+    "issues": 0
+   },
+   {
+    "psa": "SW-01",
+    "id": "ASOS:GCN",
+    "name": "GRAND CANYON PARK (GCN)",
+    "network": "ASOS/AWOS",
+    "hours": 24,
+    "maxTemp": 48,
+    "minRh": 26,
+    "maxGust": 8,
     "precip": 0,
     "issues": 0
    },
@@ -1331,6 +1721,78 @@
     "issues": 0
    },
    {
+    "psa": "SW-02",
+    "id": "ASOS:IFP",
+    "name": "BULL HEAD CITY (IFP)",
+    "network": "ASOS/AWOS",
+    "hours": 24,
+    "maxTemp": 66.2,
+    "minRh": 32,
+    "maxGust": 6,
+    "precip": 0,
+    "issues": 0
+   },
+   {
+    "psa": "SW-02",
+    "id": "ASOS:P52",
+    "name": "Cottonwood (P52)",
+    "network": "ASOS/AWOS",
+    "hours": 24,
+    "maxTemp": 59,
+    "minRh": 27,
+    "maxGust": 8,
+    "precip": 0,
+    "issues": 0
+   },
+   {
+    "psa": "SW-02",
+    "id": "ASOS:IGM",
+    "name": "Kingman (IGM)",
+    "network": "ASOS/AWOS",
+    "hours": 24,
+    "maxTemp": 56,
+    "minRh": 33,
+    "maxGust": 14,
+    "precip": 0,
+    "issues": 0
+   },
+   {
+    "psa": "SW-02",
+    "id": "ASOS:HII",
+    "name": "Lake Havasu City (HII)",
+    "network": "ASOS/AWOS",
+    "hours": 24,
+    "maxTemp": 68,
+    "minRh": 26,
+    "maxGust": 6,
+    "precip": 0,
+    "issues": 0
+   },
+   {
+    "psa": "SW-02",
+    "id": "ASOS:LUF",
+    "name": "LUKE AFB/PHOENIX (LUF)",
+    "network": "ASOS/AWOS",
+    "hours": 22,
+    "maxTemp": 70.3,
+    "minRh": 29,
+    "maxGust": 8,
+    "precip": 0,
+    "issues": 0
+   },
+   {
+    "psa": "SW-02",
+    "id": "ASOS:PRC",
+    "name": "PRESCOTT/LOVE FLD (PRC)",
+    "network": "ASOS/AWOS",
+    "hours": 24,
+    "maxTemp": 56,
+    "minRh": 28,
+    "maxGust": 10,
+    "precip": 0,
+    "issues": 0
+   },
+   {
     "psa": "SW-03",
     "id": 21503,
     "name": "AHAKHAV PRESERVE",
@@ -1403,6 +1865,66 @@
     "issues": 0
    },
    {
+    "psa": "SW-03",
+    "id": "ASOS:BXK",
+    "name": "Buckeye (BXK)",
+    "network": "ASOS/AWOS",
+    "hours": 24,
+    "maxTemp": 69.8,
+    "minRh": 33,
+    "maxGust": 9,
+    "precip": 0,
+    "issues": 0
+   },
+   {
+    "psa": "SW-03",
+    "id": "ASOS:GXF",
+    "name": "Gila Bend Af Aux (GXF)",
+    "network": "ASOS/AWOS",
+    "hours": 24,
+    "maxTemp": 71,
+    "minRh": 34,
+    "maxGust": 8,
+    "precip": 0,
+    "issues": 0
+   },
+   {
+    "psa": "SW-03",
+    "id": "ASOS:LGF",
+    "name": "Laguna AAF (LGF)",
+    "network": "ASOS/AWOS",
+    "hours": 23,
+    "maxTemp": 73.2,
+    "minRh": 18,
+    "maxGust": 7,
+    "precip": 0,
+    "issues": 0
+   },
+   {
+    "psa": "SW-03",
+    "id": "ASOS:NOZ",
+    "name": "Wellton (NOZ)",
+    "network": "ASOS/AWOS",
+    "hours": 19,
+    "maxTemp": 72,
+    "minRh": 20,
+    "maxGust": 8,
+    "precip": 0,
+    "issues": 0
+   },
+   {
+    "psa": "SW-03",
+    "id": "ASOS:NYL",
+    "name": "YUMA MCAS (NYL)",
+    "network": "ASOS/AWOS",
+    "hours": 17,
+    "maxTemp": 73,
+    "minRh": 18,
+    "maxGust": 9,
+    "precip": 0,
+    "issues": 0
+   },
+   {
     "psa": "SW-04",
     "id": 20312,
     "name": "HOPI",
@@ -1471,6 +1993,54 @@
     "maxTemp": 56,
     "minRh": 27,
     "maxGust": 13,
+    "precip": 0,
+    "issues": 0
+   },
+   {
+    "psa": "SW-04",
+    "id": "ASOS:RQE",
+    "name": "WINDOW ROCK (WAS P34) (RQE)",
+    "network": "ASOS/AWOS",
+    "hours": 24,
+    "maxTemp": 49,
+    "minRh": 42,
+    "maxGust": 9,
+    "precip": 0,
+    "issues": 0
+   },
+   {
+    "psa": "SW-04",
+    "id": "ASOS:INW",
+    "name": "WINSLOW (AUT) (INW)",
+    "network": "ASOS/AWOS",
+    "hours": 24,
+    "maxTemp": 55,
+    "minRh": 38,
+    "maxGust": 8,
+    "precip": 0,
+    "issues": 0
+   },
+   {
+    "psa": "SW-04",
+    "id": "ASOS:FMN",
+    "name": "FARMINGTON REGIONAL (FMN)",
+    "network": "ASOS/AWOS",
+    "hours": 24,
+    "maxTemp": 51,
+    "minRh": 30,
+    "maxGust": 10,
+    "precip": 0,
+    "issues": 0
+   },
+   {
+    "psa": "SW-04",
+    "id": "ASOS:GUP",
+    "name": "GALLUP MUNI/CLARKE (GUP)",
+    "network": "ASOS/AWOS",
+    "hours": 24,
+    "maxTemp": 50,
+    "minRh": 37,
+    "maxGust": 8,
     "precip": 0,
     "issues": 0
    },
@@ -1595,6 +2165,66 @@
     "issues": 0
    },
    {
+    "psa": "SW-05",
+    "id": "ASOS:FLG",
+    "name": "Flagstaff - Pulliam (FLG)",
+    "network": "ASOS/AWOS",
+    "hours": 24,
+    "maxTemp": 49,
+    "minRh": 28,
+    "maxGust": 9,
+    "precip": 0,
+    "issues": 0
+   },
+   {
+    "psa": "SW-05",
+    "id": "ASOS:SEZ",
+    "name": "Sedona (SEZ)",
+    "network": "ASOS/AWOS",
+    "hours": 24,
+    "maxTemp": 55.4,
+    "minRh": 30,
+    "maxGust": 16,
+    "precip": 0,
+    "issues": 0
+   },
+   {
+    "psa": "SW-05",
+    "id": "ASOS:SOW",
+    "name": "SHOW LOW MUNICIPAL (SOW)",
+    "network": "ASOS/AWOS",
+    "hours": 24,
+    "maxTemp": 55.4,
+    "minRh": 38,
+    "maxGust": 20,
+    "precip": 0,
+    "issues": 0
+   },
+   {
+    "psa": "SW-05",
+    "id": "ASOS:TYL",
+    "name": "Taylor (TYL)",
+    "network": "ASOS/AWOS",
+    "hours": 24,
+    "maxTemp": 57.2,
+    "minRh": 31,
+    "maxGust": 20,
+    "precip": 0,
+    "issues": 0
+   },
+   {
+    "psa": "SW-05",
+    "id": "ASOS:CMR",
+    "name": "Williams (CMR)",
+    "network": "ASOS/AWOS",
+    "hours": 24,
+    "maxTemp": 51.8,
+    "minRh": 22,
+    "maxGust": 21,
+    "precip": 0,
+    "issues": 0
+   },
+   {
     "psa": "SW-06N",
     "id": 20906,
     "name": "CASA GRANDE",
@@ -1710,6 +2340,150 @@
     "hours": 24,
     "maxTemp": 66,
     "minRh": 35,
+    "maxGust": 7,
+    "precip": 0,
+    "issues": 0
+   },
+   {
+    "psa": "SW-06N",
+    "id": "ASOS:CGZ",
+    "name": "CASA GRANDA (AWOS) (CGZ)",
+    "network": "ASOS/AWOS",
+    "hours": 24,
+    "maxTemp": 68,
+    "minRh": 40,
+    "maxGust": 8,
+    "precip": 0,
+    "issues": 0
+   },
+   {
+    "psa": "SW-06N",
+    "id": "ASOS:CHD",
+    "name": "CHANDLER MUNICIPAL AIRPORT (CHD)",
+    "network": "ASOS/AWOS",
+    "hours": 16,
+    "maxTemp": 71.6,
+    "minRh": 33,
+    "maxGust": 7,
+    "precip": 0,
+    "issues": 0
+   },
+   {
+    "psa": "SW-06N",
+    "id": "ASOS:P08",
+    "name": "Coolidge (P08)",
+    "network": "ASOS/AWOS",
+    "hours": 24,
+    "maxTemp": 69.8,
+    "minRh": 40,
+    "maxGust": 8,
+    "precip": 0,
+    "issues": 0
+   },
+   {
+    "psa": "SW-06N",
+    "id": "ASOS:DVT",
+    "name": "DEER VALLEY/PHOENIX (DVT)",
+    "network": "ASOS/AWOS",
+    "hours": 24,
+    "maxTemp": 68,
+    "minRh": 32,
+    "maxGust": 10,
+    "precip": 0,
+    "issues": 0
+   },
+   {
+    "psa": "SW-06N",
+    "id": "ASOS:GEU",
+    "name": "GLENDALE (GEU)",
+    "network": "ASOS/AWOS",
+    "hours": 15,
+    "maxTemp": 69.8,
+    "minRh": 31,
+    "maxGust": 7,
+    "precip": 0,
+    "issues": 0
+   },
+   {
+    "psa": "SW-06N",
+    "id": "ASOS:GYR",
+    "name": "GOODYEAR MUNICIPAL (GYR)",
+    "network": "ASOS/AWOS",
+    "hours": 14,
+    "maxTemp": 71.6,
+    "minRh": 33,
+    "maxGust": 6,
+    "precip": 0,
+    "issues": 0
+   },
+   {
+    "psa": "SW-06N",
+    "id": "ASOS:A39",
+    "name": "Maricopa - Ak-chin (A39)",
+    "network": "ASOS/AWOS",
+    "hours": 24,
+    "maxTemp": 69.8,
+    "minRh": 38,
+    "maxGust": 7,
+    "precip": 0,
+    "issues": 0
+   },
+   {
+    "psa": "SW-06N",
+    "id": "ASOS:FFZ",
+    "name": "MESA/FALCON FIELD (FFZ)",
+    "network": "ASOS/AWOS",
+    "hours": 24,
+    "maxTemp": 69,
+    "minRh": 38,
+    "maxGust": 10,
+    "precip": 0,
+    "issues": 0
+   },
+   {
+    "psa": "SW-06N",
+    "id": "ASOS:PAN",
+    "name": "Payson (PAN)",
+    "network": "ASOS/AWOS",
+    "hours": 24,
+    "maxTemp": 55.4,
+    "minRh": 50,
+    "maxGust": 8,
+    "precip": 0,
+    "issues": 0
+   },
+   {
+    "psa": "SW-06N",
+    "id": "ASOS:PHX",
+    "name": "PHOENIX/SKY HARBOR (PHX)",
+    "network": "ASOS/AWOS",
+    "hours": 24,
+    "maxTemp": 71,
+    "minRh": 32,
+    "maxGust": 6,
+    "precip": 0,
+    "issues": 0
+   },
+   {
+    "psa": "SW-06N",
+    "id": "ASOS:SDL",
+    "name": "SCOTTSDALE MUNI (SDL)",
+    "network": "ASOS/AWOS",
+    "hours": 24,
+    "maxTemp": 70,
+    "minRh": 31,
+    "maxGust": 6,
+    "precip": 0,
+    "issues": 0
+   },
+   {
+    "psa": "SW-06N",
+    "id": "ASOS:IWA",
+    "name": "WILLIAMS AFB/CHANDL (IWA)",
+    "network": "ASOS/AWOS",
+    "hours": 23,
+    "maxTemp": 69.8,
+    "minRh": 38,
     "maxGust": 7,
     "precip": 0,
     "issues": 0
@@ -1919,6 +2693,138 @@
     "issues": 0
    },
    {
+    "psa": "SW-06S",
+    "id": "ASOS:DMA",
+    "name": "DAVIS-MONTHAN AFB (DMA)",
+    "network": "ASOS/AWOS",
+    "hours": 24,
+    "maxTemp": 72,
+    "minRh": 33,
+    "maxGust": 10,
+    "precip": 0,
+    "issues": 0
+   },
+   {
+    "psa": "SW-06S",
+    "id": "ASOS:DUG",
+    "name": "DOUGLAS BISBEE INTL (DUG)",
+    "network": "ASOS/AWOS",
+    "hours": 21,
+    "maxTemp": 69,
+    "minRh": 37,
+    "maxGust": 16,
+    "precip": 0,
+    "issues": 0
+   },
+   {
+    "psa": "SW-06S",
+    "id": "ASOS:FHU",
+    "name": "FORT HUACHUCA/LIBBY (FHU)",
+    "network": "ASOS/AWOS",
+    "hours": 23,
+    "maxTemp": 71.4,
+    "minRh": 21,
+    "maxGust": 8,
+    "precip": 0.12,
+    "issues": 0
+   },
+   {
+    "psa": "SW-06S",
+    "id": "ASOS:OLS",
+    "name": "NOGALES INTL AIRPORT (OLS)",
+    "network": "ASOS/AWOS",
+    "hours": 24,
+    "maxTemp": 70,
+    "minRh": 21,
+    "maxGust": 9,
+    "precip": 0,
+    "issues": 0
+   },
+   {
+    "psa": "SW-06S",
+    "id": "ASOS:MZJ",
+    "name": "Pinal Airpark (MZJ)",
+    "network": "ASOS/AWOS",
+    "hours": 24,
+    "maxTemp": 69.8,
+    "minRh": 40,
+    "maxGust": 8,
+    "precip": 0,
+    "issues": 0
+   },
+   {
+    "psa": "SW-06S",
+    "id": "ASOS:ALK",
+    "name": "Pioneer Airfield (ALK)",
+    "network": "ASOS/AWOS",
+    "hours": 24,
+    "maxTemp": 67,
+    "minRh": 26,
+    "maxGust": 10,
+    "precip": 0,
+    "issues": 0
+   },
+   {
+    "psa": "SW-06S",
+    "id": "ASOS:SAD",
+    "name": "SAFFORD MUNICIPAL (SAD)",
+    "network": "ASOS/AWOS",
+    "hours": 24,
+    "maxTemp": 68,
+    "minRh": 37,
+    "maxGust": 12,
+    "precip": 0,
+    "issues": 0
+   },
+   {
+    "psa": "SW-06S",
+    "id": "ASOS:TUS",
+    "name": "TUCSON INTL AIRPORT (TUS)",
+    "network": "ASOS/AWOS",
+    "hours": 24,
+    "maxTemp": 71,
+    "minRh": 32,
+    "maxGust": 7,
+    "precip": 0,
+    "issues": 0
+   },
+   {
+    "psa": "SW-06S",
+    "id": "ASOS:AVQ",
+    "name": "Tucson - Marana (AVQ)",
+    "network": "ASOS/AWOS",
+    "hours": 24,
+    "maxTemp": 71.6,
+    "minRh": 38,
+    "maxGust": 14,
+    "precip": 0,
+    "issues": 0
+   },
+   {
+    "psa": "SW-06S",
+    "id": "ASOS:RYN",
+    "name": "TUCSON/RYAN FLD (RYN)",
+    "network": "ASOS/AWOS",
+    "hours": 15,
+    "maxTemp": 73.4,
+    "minRh": 33,
+    "maxGust": 12,
+    "precip": 0,
+    "issues": 0
+   },
+   {
+    "psa": "SW-06S",
+    "id": "ASOS:P33",
+    "name": "Wilcox (P33)",
+    "network": "ASOS/AWOS",
+    "hours": 24,
+    "maxTemp": 66.2,
+    "minRh": 40,
+    "maxGust": 15,
+    "precip": 0,
+    "issues": 0
+   },
+   {
     "psa": "SW-07",
     "id": 290305,
     "name": "BLACK MESA",
@@ -2108,6 +3014,42 @@
     "minRh": 33,
     "maxGust": 26,
     "precip": 0.05,
+    "issues": 0
+   },
+   {
+    "psa": "SW-07",
+    "id": "ASOS:GNT",
+    "name": "GRANTS-MILAN MUNI (GNT)",
+    "network": "ASOS/AWOS",
+    "hours": 24,
+    "maxTemp": 52,
+    "minRh": 37,
+    "maxGust": 10,
+    "precip": 0,
+    "issues": 0
+   },
+   {
+    "psa": "SW-07",
+    "id": "ASOS:LAM",
+    "name": "LOS ALAMOS (LAM)",
+    "network": "ASOS/AWOS",
+    "hours": 16,
+    "maxTemp": 46.2,
+    "minRh": 48,
+    "maxGust": 13,
+    "precip": 0,
+    "issues": 0
+   },
+   {
+    "psa": "SW-07",
+    "id": "ASOS:XNI",
+    "name": "Zuni (XNI)",
+    "network": "ASOS/AWOS",
+    "hours": 24,
+    "maxTemp": 55.4,
+    "minRh": 30,
+    "maxGust": 8,
+    "precip": 0,
     "issues": 0
    },
    {
@@ -2303,6 +3245,42 @@
     "issues": 0
    },
    {
+    "psa": "SW-08",
+    "id": "ASOS:JTC",
+    "name": "Springerville (JTC)",
+    "network": "ASOS/AWOS",
+    "hours": 24,
+    "maxTemp": 55.4,
+    "minRh": 28,
+    "maxGust": 21,
+    "precip": 0,
+    "issues": 0
+   },
+   {
+    "psa": "SW-08",
+    "id": "ASOS:SJN",
+    "name": "ST. JOHNS AIR PARK (SJN)",
+    "network": "ASOS/AWOS",
+    "hours": 24,
+    "maxTemp": 57,
+    "minRh": 29,
+    "maxGust": 12,
+    "precip": 0,
+    "issues": 0
+   },
+   {
+    "psa": "SW-08",
+    "id": "ASOS:SVC",
+    "name": "SILVER CITY/GRANT (SVC)",
+    "network": "ASOS/AWOS",
+    "hours": 24,
+    "maxTemp": 62,
+    "minRh": 35,
+    "maxGust": 12,
+    "precip": 0,
+    "issues": 0
+   },
+   {
     "psa": "SW-09",
     "id": 292103,
     "name": "BOSQUE",
@@ -2375,6 +3353,138 @@
     "issues": 0
    },
    {
+    "psa": "SW-09",
+    "id": "ASOS:ALM",
+    "name": "ALAMOGORDO-WHITE (ALM)",
+    "network": "ASOS/AWOS",
+    "hours": 24,
+    "maxTemp": 66.2,
+    "minRh": 35,
+    "maxGust": 13,
+    "precip": 0,
+    "issues": 0
+   },
+   {
+    "psa": "SW-09",
+    "id": "ASOS:AEG",
+    "name": "ALBUQUERQUE/DOUBLE EAGLE II APT (AEG)",
+    "network": "ASOS/AWOS",
+    "hours": 24,
+    "maxTemp": 51.8,
+    "minRh": 43,
+    "maxGust": 8,
+    "precip": 0,
+    "issues": 0
+   },
+   {
+    "psa": "SW-09",
+    "id": "ASOS:ABQ",
+    "name": "ALBUQUERQUE INTL (ABQ)",
+    "network": "ASOS/AWOS",
+    "hours": 24,
+    "maxTemp": 55,
+    "minRh": 40,
+    "maxGust": 8,
+    "precip": 0,
+    "issues": 0
+   },
+   {
+    "psa": "SW-09",
+    "id": "ASOS:BRG",
+    "name": "Belen (BRG)",
+    "network": "ASOS/AWOS",
+    "hours": 24,
+    "maxTemp": 56.3,
+    "minRh": 38,
+    "maxGust": 8,
+    "precip": 0,
+    "issues": 0
+   },
+   {
+    "psa": "SW-09",
+    "id": "ASOS:DMN",
+    "name": "DEMING MUNICIPAL (DMN)",
+    "network": "ASOS/AWOS",
+    "hours": 24,
+    "maxTemp": 66,
+    "minRh": 38,
+    "maxGust": 10,
+    "precip": 0,
+    "issues": 0
+   },
+   {
+    "psa": "SW-09",
+    "id": "ASOS:HMN",
+    "name": "HOLLOMAN AFB (HMN)",
+    "network": "ASOS/AWOS",
+    "hours": 22,
+    "maxTemp": 66.2,
+    "minRh": 35,
+    "maxGust": 10,
+    "precip": 0,
+    "issues": 0
+   },
+   {
+    "psa": "SW-09",
+    "id": "ASOS:LRU",
+    "name": "LAS CRUCES INTL (LRU)",
+    "network": "ASOS/AWOS",
+    "hours": 24,
+    "maxTemp": 64.6,
+    "minRh": 37,
+    "maxGust": 26,
+    "precip": 0,
+    "issues": 0
+   },
+   {
+    "psa": "SW-09",
+    "id": "ASOS:LSB",
+    "name": "Lordsburg (LSB)",
+    "network": "ASOS/AWOS",
+    "hours": 24,
+    "maxTemp": 64.4,
+    "minRh": 42,
+    "maxGust": 10,
+    "precip": 0,
+    "issues": 0
+   },
+   {
+    "psa": "SW-09",
+    "id": "ASOS:DNA",
+    "name": "Santa Teresa (DNA)",
+    "network": "ASOS/AWOS",
+    "hours": 24,
+    "maxTemp": 68,
+    "minRh": 35,
+    "maxGust": 12,
+    "precip": 0,
+    "issues": 0
+   },
+   {
+    "psa": "SW-09",
+    "id": "ASOS:ONM",
+    "name": "Socorro (ONM)",
+    "network": "ASOS/AWOS",
+    "hours": 24,
+    "maxTemp": 60.3,
+    "minRh": 40,
+    "maxGust": 9,
+    "precip": 0,
+    "issues": 0
+   },
+   {
+    "psa": "SW-09",
+    "id": "ASOS:TCS",
+    "name": "TRUTH OR CONSEQUENC (TCS)",
+    "network": "ASOS/AWOS",
+    "hours": 24,
+    "maxTemp": 61,
+    "minRh": 39,
+    "maxGust": 9,
+    "precip": 0,
+    "issues": 0
+   },
+   {
     "psa": "SW-10",
     "id": 291002,
     "name": "BARTLEY",
@@ -2435,6 +3545,66 @@
     "issues": 0
    },
    {
+    "psa": "SW-10",
+    "id": "ASOS:AXX",
+    "name": "Angel Fire (AXX)",
+    "network": "ASOS/AWOS",
+    "hours": 24,
+    "maxTemp": 40.6,
+    "minRh": 51,
+    "maxGust": 37,
+    "precip": 0.09,
+    "issues": 0
+   },
+   {
+    "psa": "SW-10",
+    "id": "ASOS:LVS",
+    "name": "LAS VEGAS MUNICIPAL (LVS)",
+    "network": "ASOS/AWOS",
+    "hours": 24,
+    "maxTemp": 57,
+    "minRh": 18,
+    "maxGust": 33,
+    "precip": 0.08,
+    "issues": 0
+   },
+   {
+    "psa": "SW-10",
+    "id": "ASOS:N24",
+    "name": "Questa (N24)",
+    "network": "ASOS/AWOS",
+    "hours": 24,
+    "maxTemp": 46.4,
+    "minRh": 35,
+    "maxGust": 22,
+    "precip": 0.07,
+    "issues": 0
+   },
+   {
+    "psa": "SW-10",
+    "id": "ASOS:RTN",
+    "name": "RATON/CREWS FLD (RTN)",
+    "network": "ASOS/AWOS",
+    "hours": 24,
+    "maxTemp": 61,
+    "minRh": 14,
+    "maxGust": 30,
+    "precip": 0.06,
+    "issues": 0
+   },
+   {
+    "psa": "SW-10",
+    "id": "ASOS:SAF",
+    "name": "SANTA FE CO. MUNI (SAF)",
+    "network": "ASOS/AWOS",
+    "hours": 24,
+    "maxTemp": 51,
+    "minRh": 41,
+    "maxGust": 17,
+    "precip": 0,
+    "issues": 0
+   },
+   {
     "psa": "SW-11",
     "id": 292102,
     "name": "CHUPADERA",
@@ -2480,6 +3650,30 @@
     "minRh": 46,
     "maxGust": 30,
     "precip": 0.04,
+    "issues": 0
+   },
+   {
+    "psa": "SW-11",
+    "id": "ASOS:CQC",
+    "name": "CLINES CORNERS (CQC)",
+    "network": "ASOS/AWOS",
+    "hours": 24,
+    "maxTemp": 50,
+    "minRh": 41,
+    "maxGust": 37,
+    "precip": 0.08,
+    "issues": 0
+   },
+   {
+    "psa": "SW-11",
+    "id": "ASOS:0E0",
+    "name": "Moriarty (0E0)",
+    "network": "ASOS/AWOS",
+    "hours": 24,
+    "maxTemp": 56,
+    "minRh": 34,
+    "maxGust": 16,
+    "precip": 0,
     "issues": 0
    },
    {
@@ -2615,6 +3809,18 @@
     "issues": 1
    },
    {
+    "psa": "SW-12",
+    "id": "ASOS:SRR",
+    "name": "RUIDOSO REGIONAL (SRR)",
+    "network": "ASOS/AWOS",
+    "hours": 24,
+    "maxTemp": 56.3,
+    "minRh": 47,
+    "maxGust": 24,
+    "precip": 0,
+    "issues": 0
+   },
+   {
     "psa": "SW-13",
     "id": 291901,
     "name": "MELROSE RANGE",
@@ -2633,10 +3839,70 @@
     "network": "RAWS",
     "hours": 24,
     "maxTemp": 63,
-    "minRh": 14,
+    "minRh": "",
     "maxGust": 25,
     "precip": 0,
+    "issues": 1
+   },
+   {
+    "psa": "SW-13",
+    "id": "ASOS:CVS",
+    "name": "CANNON AFB/CLOVIS (CVS)",
+    "network": "ASOS/AWOS",
+    "hours": 23,
+    "maxTemp": 59.5,
+    "minRh": 61,
+    "maxGust": 14,
+    "precip": 0,
     "issues": 0
+   },
+   {
+    "psa": "SW-13",
+    "id": "ASOS:CAO",
+    "name": "Clayton (CAO)",
+    "network": "ASOS/AWOS",
+    "hours": 24,
+    "maxTemp": 63,
+    "minRh": "",
+    "maxGust": 41,
+    "precip": 0,
+    "issues": 1
+   },
+   {
+    "psa": "SW-13",
+    "id": "ASOS:CVN",
+    "name": "Clovis Muni (CVN)",
+    "network": "ASOS/AWOS",
+    "hours": 24,
+    "maxTemp": 58,
+    "minRh": 67,
+    "maxGust": 15,
+    "precip": 0,
+    "issues": 0
+   },
+   {
+    "psa": "SW-13",
+    "id": "ASOS:SXU",
+    "name": "Santa Rosa (SXU)",
+    "network": "ASOS/AWOS",
+    "hours": 24,
+    "maxTemp": 62.6,
+    "minRh": 31,
+    "maxGust": 26,
+    "precip": 0.11,
+    "issues": 0
+   },
+   {
+    "psa": "SW-13",
+    "id": "ASOS:TCC",
+    "name": "TUCUMCARI MUNICIPAL (TCC)",
+    "network": "ASOS/AWOS",
+    "hours": 24,
+    "maxTemp": 66,
+    "minRh": "",
+    "maxGust": 38,
+    "precip": 0,
+    "issues": 1
    },
    {
     "psa": "SW-14N",
@@ -2685,6 +3951,54 @@
     "maxGust": 15,
     "precip": 0,
     "issues": 0
+   },
+   {
+    "psa": "SW-14N",
+    "id": "ASOS:ATS",
+    "name": "ARTESIA (ATS)",
+    "network": "ASOS/AWOS",
+    "hours": 24,
+    "maxTemp": 55.4,
+    "minRh": 82,
+    "maxGust": 14,
+    "precip": 0,
+    "issues": 0
+   },
+   {
+    "psa": "SW-14N",
+    "id": "ASOS:CNM",
+    "name": "CARLSBAD/CAVERN CTY (CNM)",
+    "network": "ASOS/AWOS",
+    "hours": 24,
+    "maxTemp": 59,
+    "minRh": 72,
+    "maxGust": 8,
+    "precip": 0,
+    "issues": 0
+   },
+   {
+    "psa": "SW-14N",
+    "id": "ASOS:HOB",
+    "name": "HOBBS/LEA CO. (HOB)",
+    "network": "ASOS/AWOS",
+    "hours": 24,
+    "maxTemp": 57.2,
+    "minRh": 77,
+    "maxGust": 18,
+    "precip": 0,
+    "issues": 0
+   },
+   {
+    "psa": "SW-14N",
+    "id": "ASOS:ROW",
+    "name": "ROSWELL/INDUSTRIAL (ROW)",
+    "network": "ASOS/AWOS",
+    "hours": 23,
+    "maxTemp": 55,
+    "minRh": 80,
+    "maxGust": 14,
+    "precip": 0.01,
+    "issues": 0
    }
   ],
   "checks": [
@@ -2709,11 +4023,44 @@
     "reason": "over 75 mph; no station nearby gusted 61+ mph",
     "hour": "15:38",
     "action": "dropped"
+   },
+   {
+    "psa": "SW-13",
+    "id": 291101,
+    "name": "MILLS CANYON",
+    "network": "RAWS",
+    "field": "min RH",
+    "value": 14,
+    "reason": "31 away from the other stations' median (45)",
+    "hour": "",
+    "action": "dropped"
+   },
+   {
+    "psa": "SW-13",
+    "id": "ASOS:CAO",
+    "name": "Clayton (CAO)",
+    "network": "ASOS/AWOS",
+    "field": "min RH",
+    "value": 18,
+    "reason": "41 away from the other stations' median (59)",
+    "hour": "",
+    "action": "dropped"
+   },
+   {
+    "psa": "SW-13",
+    "id": "ASOS:TCC",
+    "name": "TUCUMCARI MUNICIPAL (TCC)",
+    "network": "ASOS/AWOS",
+    "field": "min RH",
+    "value": 27,
+    "reason": "33 away from the other stations' median (60)",
+    "hour": "",
+    "action": "dropped"
    }
   ],
-  "asosError": "mesonet.agron.iastate.edu answered 429",
-  "source": "FEMS RAWS + (no) IEM ASOS/AWOS observations (auto, quality-checked)",
-  "fetchedAt": "2026-11-19T08:54"
+  "asosError": "",
+  "source": "FEMS RAWS + IEM ASOS/AWOS observations (auto, quality-checked)",
+  "fetchedAt": "2026-11-19T09:22"
  },
  "femsNfdr": {
   "date": "2026-11-18",
@@ -3293,6 +4640,239 @@
    }
   ],
   "source": "FEMS NFDRS observations (auto)",
-  "fetchedAt": "2026-11-19T08:54"
+  "fetchedAt": "2026-11-19T09:22"
+ },
+ "health": {
+  "run": "2026-11-19T09:22",
+  "trigger": "push",
+  "steps": {
+   "7-Day outlook": {
+    "ok": true,
+    "at": "2026-11-19T09:22",
+    "secs": 1
+   },
+   "Crews (SharePoint)": {
+    "ok": false,
+    "at": "2026-11-19T09:22",
+    "msg": "Cannot read properties of undefined (reading 'startsWith')",
+    "lastOk": ""
+   },
+   "IMTs (SharePoint)": {
+    "ok": true,
+    "at": "2026-11-19T09:22",
+    "secs": 0
+   },
+   "Fire Activity (WFIGS active incidents)": {
+    "ok": true,
+    "at": "2026-11-19T09:22",
+    "secs": 0
+   },
+   "Fire starts (WFIGS)": {
+    "ok": true,
+    "at": "2026-11-19T09:22",
+    "secs": 0
+   },
+   "RAWS + ASOS/AWOS weather obs": {
+    "ok": true,
+    "at": "2026-11-19T09:22",
+    "secs": 21
+   },
+   "FEMS ERC/BI (fuel model Y)": {
+    "ok": true,
+    "at": "2026-11-19T09:22",
+    "secs": 1
+   },
+   "PSA ERCy/BI (FEMS daily summary, 40 stations)": {
+    "ok": true,
+    "at": "2026-11-19T09:22",
+    "secs": 0
+   },
+   "FEMS forecast ERC/BI (next 6 days)": {
+    "ok": false,
+    "at": "2026-11-19T09:22",
+    "msg": "FEMS returned no forecast ERC/BI; the forecast carries today's ERCy forward",
+    "lastOk": ""
+   },
+   "Actual SW PL (NICC / SWCC)": {
+    "ok": false,
+    "at": "2026-11-19T09:22",
+    "msg": "couldn't read the Southwest PL (NICC: no Southwest row found; SWCC: no number under the Preparedness Level header); what the pages looked like is in data/archive/actual_pl_debug.txt",
+    "lastOk": ""
+   },
+   "Filling in ERC/BI since 2026-01-01": {
+    "ok": true,
+    "at": "2026-11-19T09:23",
+    "secs": 48
+   },
+   "Filling in weather since 2026-01-01": {
+    "ok": true,
+    "at": "2026-11-19T09:26",
+    "secs": 157
+   }
+  },
+  "backfill": {
+   "ercy": 0,
+   "weather": 288,
+   "from": "2026-01-01",
+   "checked": "2026-11-19T09:26"
+  },
+  "backfillGaveUp": {
+   "ercy": [],
+   "weather": []
+  }
+ },
+ "criteria": {
+  "label": "2026-11-19",
+  "fingerprint": "48b82c5e",
+  "breakpoints": "data/erc_bi_breakpoints.csv"
+ },
+ "forecast": {
+  "issued": "2026-11-19T09:26",
+  "criteria": {
+   "label": "2026-11-19",
+   "fingerprint": "48b82c5e"
+  },
+  "days": [
+   {
+    "lead": 0,
+    "date": "2026-11-19",
+    "outlookDay": 1,
+    "outlookIssued": "2026-11-19",
+    "pl": 1,
+    "score": 0,
+    "held": false,
+    "ratings": {
+     "fire": "Minimum",
+     "imt": "Low",
+     "crews": "Minimum",
+     "outlook": "Minimum",
+     "danger": "Minimum"
+    },
+    "outlookAvg": 15,
+    "dangerSource": "observed 2026-11-18",
+    "dayLevel": "Minimum"
+   },
+   {
+    "lead": 1,
+    "date": "2026-11-20",
+    "outlookDay": 2,
+    "outlookIssued": "2026-11-19",
+    "pl": 1,
+    "score": 0,
+    "held": false,
+    "ratings": {
+     "fire": "Minimum",
+     "imt": "Low",
+     "crews": "Minimum",
+     "outlook": "Minimum",
+     "danger": "Minimum"
+    },
+    "outlookAvg": 15,
+    "dangerSource": "observed 2026-11-18",
+    "dayLevel": "Minimum"
+   },
+   {
+    "lead": 2,
+    "date": "2026-11-21",
+    "outlookDay": 3,
+    "outlookIssued": "2026-11-19",
+    "pl": 1,
+    "score": 0,
+    "held": false,
+    "ratings": {
+     "fire": "Minimum",
+     "imt": "Low",
+     "crews": "Minimum",
+     "outlook": "Minimum",
+     "danger": "Minimum"
+    },
+    "outlookAvg": 15,
+    "dangerSource": "observed 2026-11-18",
+    "dayLevel": "Minimum"
+   },
+   {
+    "lead": 3,
+    "date": "2026-11-22",
+    "outlookDay": 4,
+    "outlookIssued": "2026-11-19",
+    "pl": 1,
+    "score": 0,
+    "held": false,
+    "ratings": {
+     "fire": "Minimum",
+     "imt": "Low",
+     "crews": "Minimum",
+     "outlook": "Minimum",
+     "danger": "Minimum"
+    },
+    "outlookAvg": 15,
+    "dangerSource": "observed 2026-11-18",
+    "dayLevel": "Minimum"
+   },
+   {
+    "lead": 4,
+    "date": "2026-11-23",
+    "outlookDay": 5,
+    "outlookIssued": "2026-11-19",
+    "pl": 1,
+    "score": 0,
+    "held": false,
+    "ratings": {
+     "fire": "Minimum",
+     "imt": "Low",
+     "crews": "Minimum",
+     "outlook": "Minimum",
+     "danger": "Minimum"
+    },
+    "outlookAvg": 15,
+    "dangerSource": "observed 2026-11-18",
+    "dayLevel": "Minimum"
+   },
+   {
+    "lead": 5,
+    "date": "2026-11-24",
+    "outlookDay": 6,
+    "outlookIssued": "2026-11-19",
+    "pl": 1,
+    "score": 0,
+    "held": false,
+    "ratings": {
+     "fire": "Minimum",
+     "imt": "Low",
+     "crews": "Minimum",
+     "outlook": "Minimum",
+     "danger": "Minimum"
+    },
+    "outlookAvg": 15,
+    "dangerSource": "observed 2026-11-18",
+    "dayLevel": "Minimum"
+   },
+   {
+    "lead": 6,
+    "date": "2026-11-25",
+    "outlookDay": 7,
+    "outlookIssued": "2026-11-19",
+    "pl": 1,
+    "score": 0,
+    "held": false,
+    "ratings": {
+     "fire": "Minimum",
+     "imt": "Low",
+     "crews": "Minimum",
+     "outlook": "Minimum",
+     "danger": "Minimum"
+    },
+    "outlookAvg": 15,
+    "dangerSource": "observed 2026-11-18",
+    "dayLevel": "Minimum"
+   }
+  ]
+ },
+ "plConfirm": {
+  "pl": 1,
+  "since": "2026-11-19T09:26",
+  "pending": null,
+  "calculated": 1,
+  "checked": "2026-11-19T09:26"
  }
 }
