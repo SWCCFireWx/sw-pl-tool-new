@@ -1,10 +1,10 @@
 {
  "schema": 1,
  "meta": {
-  "asOf": "2026-11-19T09:44",
+  "asOf": "2026-11-19T09:51",
   "preparedBy": "",
   "notes": "Seeded from 2026_SWA_PL_Dashboard_V3_SHOULDER_SEASON_MASTER.xlsx",
-  "source": "automated pull 2026-11-19T09:44"
+  "source": "automated pull 2026-11-19T09:51"
  },
  "preset": "standard",
  "weights": {
@@ -18,10 +18,10 @@
   "rating": "Minimum",
   "complex": 0,
   "t3": 0,
-  "updated": "2026-11-19T09:41",
+  "updated": "2026-11-19T09:48",
   "escapes": 0,
   "escapeList": [],
-  "fetchedAt": "2026-11-19T09:41",
+  "fetchedAt": "2026-11-19T09:48",
   "source": "WFIGS active incidents (auto)",
   "incidents": [],
   "activeTotal": 1,
@@ -188,7 +188,7 @@
    "remarks": ""
   }
  ],
- "imtsUpdated": "2026-11-19T09:41",
+ "imtsUpdated": "2026-11-19T09:48",
  "crews": [
   {
    "name": "Aravaipa",
@@ -452,7 +452,7 @@
   }
  ],
  "ooaCrews": [],
- "crewsUpdated": "2026-11-19T08:54",
+ "crewsUpdated": "2026-11-19T09:48",
  "outlook": {
   "startDate": "2026-11-19",
   "values": {
@@ -594,7 +594,7 @@
   },
   "updated": "2026-11-19",
   "source": "NPSG 7-Day (auto)",
-  "fetchedAt": "2026-11-19T09:41",
+  "fetchedAt": "2026-11-19T09:48",
   "missing": []
  },
  "danger": {
@@ -1067,19 +1067,21 @@
    }
   ],
   "source": "FEMS NFDR daily summary (auto)",
-  "fetchedAt": "2026-11-19T09:42",
+  "fetchedAt": "2026-11-19T09:48",
   "breakpoints": "data/erc_bi_breakpoints.csv"
  },
  "imtsSource": {
   "source": "SWCC SharePoint (auto)",
-  "fetchedAt": "2026-11-19T09:41",
+  "fetchedAt": "2026-11-19T09:48",
   "lastUpdate": "0700 11/19/2026 DH"
  },
  "crewsSource": {
   "source": "SWCC SharePoint (auto)",
-  "fetchedAt": "2026-11-19T08:54",
+  "fetchedAt": "2026-11-19T09:48",
   "lastUpdate": "11/12/2026 07:00",
-  "ooaLastUpdate": "11/12/2026 07:00"
+  "ooaLastUpdate": "11/12/2026 07:00",
+  "t2iaLastUpdate": "11/12/2026 07:00",
+  "t2iaSheet": "SWA Type 2IA "
  },
  "modelVersion": 2,
  "fireStarts": {
@@ -1271,7 +1273,7 @@
   ],
   "placedByPsa": true,
   "layer": "https://services3.arcgis.com/T4QMspbfLg3qTGWY/arcgis/rest/services/WFIGS_Incident_Locations_YearToDate/FeatureServer/0",
-  "fetchedAt": "2026-11-19T09:41",
+  "fetchedAt": "2026-11-19T09:48",
   "source": "WFIGS incident locations (auto)"
  },
  "raws": {
@@ -4084,7 +4086,7 @@
   ],
   "asosError": "",
   "source": "FEMS RAWS + IEM ASOS/AWOS observations (auto, quality-checked)",
-  "fetchedAt": "2026-11-19T09:42"
+  "fetchedAt": "2026-11-19T09:48"
  },
  "femsNfdr": {
   "date": "2026-11-18",
@@ -4664,64 +4666,61 @@
    }
   ],
   "source": "FEMS NFDRS observations (auto)",
-  "fetchedAt": "2026-11-19T09:42"
+  "fetchedAt": "2026-11-19T09:48"
  },
  "health": {
-  "run": "2026-11-19T09:41",
+  "run": "2026-11-19T09:48",
   "trigger": "workflow_dispatch",
   "steps": {
    "7-Day outlook": {
     "ok": true,
-    "at": "2026-11-19T09:41",
+    "at": "2026-11-19T09:48",
     "secs": 1
    },
    "Crews (SharePoint)": {
-    "ok": false,
-    "at": "2026-11-19T09:41",
-    "msg": "Cannot read properties of undefined (reading 'startsWith')",
-    "lastOk": ""
+    "ok": true,
+    "at": "2026-11-19T09:48",
+    "secs": 0
    },
    "IMTs (SharePoint)": {
     "ok": true,
-    "at": "2026-11-19T09:41",
+    "at": "2026-11-19T09:48",
     "secs": 0
    },
    "Fire Activity (WFIGS active incidents)": {
     "ok": true,
-    "at": "2026-11-19T09:41",
+    "at": "2026-11-19T09:48",
     "secs": 0
    },
    "Fire starts (WFIGS)": {
     "ok": true,
-    "at": "2026-11-19T09:41",
+    "at": "2026-11-19T09:48",
     "secs": 0
    },
    "RAWS + ASOS/AWOS weather obs": {
     "ok": true,
-    "at": "2026-11-19T09:42",
-    "secs": 34
+    "at": "2026-11-19T09:48",
+    "secs": 20
    },
    "FEMS ERC/BI (fuel model Y)": {
     "ok": true,
-    "at": "2026-11-19T09:42",
-    "secs": 0
+    "at": "2026-11-19T09:48",
+    "secs": 2
    },
    "PSA ERCy/BI (FEMS daily summary, 40 stations)": {
     "ok": true,
-    "at": "2026-11-19T09:42",
+    "at": "2026-11-19T09:48",
     "secs": 0
    },
    "FEMS forecast ERC/BI (next 6 days)": {
-    "ok": false,
-    "at": "2026-11-19T09:42",
-    "msg": "FEMS returned no forecast ERC/BI; the forecast carries today's ERCy forward",
-    "lastOk": ""
+    "ok": true,
+    "at": "2026-11-19T09:48",
+    "secs": 0
    },
    "Actual SW PL (NICC / SWCC)": {
-    "ok": false,
-    "at": "2026-11-19T09:42",
-    "msg": "couldn't read the Southwest PL (NICC: no Southwest row found; SWCC: no number under the Preparedness Level header); what the pages looked like is in data/archive/actual_pl_debug.txt",
-    "lastOk": ""
+    "ok": true,
+    "at": "2026-11-19T09:48",
+    "secs": 1
    },
    "Filling in ERC/BI since 2026-01-01": {
     "ok": true,
@@ -4730,15 +4729,15 @@
    },
    "Filling in weather since 2026-01-01": {
     "ok": true,
-    "at": "2026-11-19T09:44",
-    "secs": 156
+    "at": "2026-11-19T09:51",
+    "secs": 157
    }
   },
   "backfill": {
    "ercy": 0,
-   "weather": 198,
+   "weather": 168,
    "from": "2026-01-01",
-   "checked": "2026-11-19T09:44"
+   "checked": "2026-11-19T09:51"
   },
   "backfillGaveUp": {
    "ercy": [],
@@ -4751,7 +4750,7 @@
   "breakpoints": "data/erc_bi_breakpoints.csv"
  },
  "forecast": {
-  "issued": "2026-11-19T09:44",
+  "issued": "2026-11-19T09:51",
   "criteria": {
    "label": "2026-11-19c",
    "fingerprint": "89e2f9fe"
@@ -4792,7 +4791,7 @@
      "danger": "Minimum"
     },
     "outlookAvg": 15,
-    "dangerSource": "observed 2026-11-18",
+    "dangerSource": "FEMS forecast ERC/BI",
     "dayLevel": "Minimum"
    },
    {
@@ -4811,7 +4810,7 @@
      "danger": "Minimum"
     },
     "outlookAvg": 15,
-    "dangerSource": "observed 2026-11-18",
+    "dangerSource": "FEMS forecast ERC/BI",
     "dayLevel": "Minimum"
    },
    {
@@ -4830,7 +4829,7 @@
      "danger": "Minimum"
     },
     "outlookAvg": 15,
-    "dangerSource": "observed 2026-11-18",
+    "dangerSource": "FEMS forecast ERC/BI",
     "dayLevel": "Minimum"
    },
    {
@@ -4849,7 +4848,7 @@
      "danger": "Minimum"
     },
     "outlookAvg": 15,
-    "dangerSource": "observed 2026-11-18",
+    "dangerSource": "FEMS forecast ERC/BI",
     "dayLevel": "Minimum"
    },
    {
@@ -4868,7 +4867,7 @@
      "danger": "Minimum"
     },
     "outlookAvg": 15,
-    "dangerSource": "observed 2026-11-18",
+    "dangerSource": "FEMS forecast ERC/BI",
     "dayLevel": "Minimum"
    },
    {
@@ -4887,7 +4886,7 @@
      "danger": "Minimum"
     },
     "outlookAvg": 15,
-    "dangerSource": "observed 2026-11-18",
+    "dangerSource": "FEMS forecast ERC/BI",
     "dayLevel": "Minimum"
    }
   ]
@@ -4897,7 +4896,7 @@
   "since": "2026-11-19T09:26",
   "pending": null,
   "calculated": 1,
-  "checked": "2026-11-19T09:44"
+  "checked": "2026-11-19T09:51"
  },
  "criteriaChanges": [
   {
@@ -4908,5 +4907,1034 @@
    "toFingerprint": "89e2f9fe",
    "labelChanged": true
   }
- ]
+ ],
+ "t2iaCrews": [
+  {
+   "name": "Pecos River*",
+   "type": "CR2I",
+   "state": "NM",
+   "disp": "SFC",
+   "unit": "NMS",
+   "dayOff": "N/A",
+   "status": "U",
+   "location": "",
+   "incident": "",
+   "dateCom": "",
+   "remarks": ""
+  },
+  {
+   "name": "San Carlos 1",
+   "type": "CR2I",
+   "state": "AZ",
+   "disp": "PHC",
+   "unit": "SCA",
+   "dayOff": "N/A",
+   "status": "U",
+   "location": "",
+   "incident": "",
+   "dateCom": "",
+   "remarks": ""
+  },
+  {
+   "name": "Navajo Scouts 1",
+   "type": "CR2I",
+   "state": "AZ",
+   "disp": "FDC",
+   "unit": "NAA",
+   "dayOff": "N/A",
+   "status": "U",
+   "location": "",
+   "incident": "",
+   "dateCom": "",
+   "remarks": ""
+  },
+  {
+   "name": "Phoenix Crew",
+   "type": "CR2I",
+   "state": "AZ",
+   "disp": "ADC",
+   "unit": "AZS",
+   "dayOff": "N/A",
+   "status": "U",
+   "location": "",
+   "incident": "",
+   "dateCom": "",
+   "remarks": ""
+  },
+  {
+   "name": "Apache Sitgreaves 1",
+   "type": "CR2I",
+   "state": "AZ",
+   "disp": "SDC",
+   "unit": "ASF",
+   "dayOff": "N/A",
+   "status": "U",
+   "location": "",
+   "incident": "",
+   "dateCom": "",
+   "remarks": ""
+  },
+  {
+   "name": "Fort Apache 01",
+   "type": "CR2I",
+   "state": "AZ",
+   "disp": "SDC",
+   "unit": "FTA",
+   "dayOff": "N/A",
+   "status": "U",
+   "location": "",
+   "incident": "",
+   "dateCom": "",
+   "remarks": ""
+  },
+  {
+   "name": "Rio Grande",
+   "type": "CR2I",
+   "state": "NM",
+   "disp": "SFC",
+   "unit": "NMS",
+   "dayOff": "N/A",
+   "status": "U",
+   "location": "",
+   "incident": "",
+   "dateCom": "",
+   "remarks": ""
+  },
+  {
+   "name": "Safford",
+   "type": "CR2I",
+   "state": "AZ",
+   "disp": "TDC",
+   "unit": "GID",
+   "dayOff": "N/A",
+   "status": "U",
+   "location": "",
+   "incident": "",
+   "dateCom": "",
+   "remarks": ""
+  },
+  {
+   "name": "Fort Apache 02",
+   "type": "CR2I",
+   "state": "AZ",
+   "disp": "SDC",
+   "unit": "FTA",
+   "dayOff": "N/A",
+   "status": "U",
+   "location": "",
+   "incident": "",
+   "dateCom": "",
+   "remarks": ""
+  },
+  {
+   "name": "Navajo Scouts 2",
+   "type": "CR2I",
+   "state": "AZ",
+   "disp": "FDC",
+   "unit": "NAA",
+   "dayOff": "N/A",
+   "status": "U",
+   "location": "",
+   "incident": "",
+   "dateCom": "",
+   "remarks": ""
+  },
+  {
+   "name": "Bandelier",
+   "type": "CR2I",
+   "state": "NM",
+   "disp": "SFC",
+   "unit": "BAP",
+   "dayOff": "N/A",
+   "status": "U",
+   "location": "",
+   "incident": "",
+   "dateCom": "",
+   "remarks": ""
+  },
+  {
+   "name": "Wheeler Peak",
+   "type": "CR2I",
+   "state": "NM",
+   "disp": "SFC",
+   "unit": "NMS",
+   "dayOff": "N/A",
+   "status": "U",
+   "location": "",
+   "incident": "",
+   "dateCom": "",
+   "remarks": ""
+  },
+  {
+   "name": "Mimbres*",
+   "type": "CR2I",
+   "state": "NM",
+   "disp": "SDC",
+   "unit": "N3S",
+   "dayOff": "Fr-Sa-Su",
+   "status": "UE",
+   "location": "",
+   "incident": "",
+   "dateCom": "",
+   "remarks": ""
+  }
+ ],
+ "forecastDanger": {
+  "2026-11-20": {
+   "rows": {
+    "SW-01": {
+     "ercVal": 14.7,
+     "biVal": 10,
+     "ercPct": 45,
+     "biPct": 45,
+     "stations": 3,
+     "stationsListed": 3,
+     "missing": []
+    },
+    "SW-02": {
+     "ercVal": 22,
+     "biVal": 17.6,
+     "ercPct": 45,
+     "biPct": 45,
+     "stations": 3,
+     "stationsListed": 3,
+     "missing": []
+    },
+    "SW-03": {
+     "ercVal": 36,
+     "biVal": 24.5,
+     "ercPct": 45,
+     "biPct": 45,
+     "stations": 1,
+     "stationsListed": 1,
+     "missing": []
+    },
+    "SW-04": {
+     "ercVal": 20.7,
+     "biVal": 23.2,
+     "ercPct": 45,
+     "biPct": 50,
+     "stations": 3,
+     "stationsListed": 3,
+     "missing": []
+    },
+    "SW-05": {
+     "ercVal": 18,
+     "biVal": 21.8,
+     "ercPct": 45,
+     "biPct": 45,
+     "stations": 3,
+     "stationsListed": 3,
+     "missing": []
+    },
+    "SW-06N": {
+     "ercVal": 21,
+     "biVal": 17.3,
+     "ercPct": 45,
+     "biPct": 45,
+     "stations": 2,
+     "stationsListed": 2,
+     "missing": []
+    },
+    "SW-06S": {
+     "ercVal": 25,
+     "biVal": 19.3,
+     "ercPct": 45,
+     "biPct": 45,
+     "stations": 4,
+     "stationsListed": 4,
+     "missing": []
+    },
+    "SW-07": {
+     "ercVal": 21.3,
+     "biVal": 20.2,
+     "ercPct": 45,
+     "biPct": 45,
+     "stations": 3,
+     "stationsListed": 3,
+     "missing": []
+    },
+    "SW-08": {
+     "ercVal": 22.5,
+     "biVal": 24,
+     "ercPct": 45,
+     "biPct": 45,
+     "stations": 4,
+     "stationsListed": 4,
+     "missing": []
+    },
+    "SW-09": {
+     "ercVal": 24.3,
+     "biVal": 24.2,
+     "ercPct": 45,
+     "biPct": 45,
+     "stations": 3,
+     "stationsListed": 3,
+     "missing": []
+    },
+    "SW-10": {
+     "ercVal": 22,
+     "biVal": 23.4,
+     "ercPct": 45,
+     "biPct": 50,
+     "stations": 2,
+     "stationsListed": 2,
+     "missing": []
+    },
+    "SW-11": {
+     "ercVal": 19.5,
+     "biVal": 23.5,
+     "ercPct": 45,
+     "biPct": 45,
+     "stations": 2,
+     "stationsListed": 2,
+     "missing": []
+    },
+    "SW-12": {
+     "ercVal": 22.3,
+     "biVal": 24.2,
+     "ercPct": 45,
+     "biPct": 45,
+     "stations": 3,
+     "stationsListed": 3,
+     "missing": []
+    },
+    "SW-13": {
+     "ercVal": 13,
+     "biVal": 18.6,
+     "ercPct": 45,
+     "biPct": 45,
+     "stations": 2,
+     "stationsListed": 2,
+     "missing": []
+    },
+    "SW-14N": {
+     "ercVal": 13.7,
+     "biVal": 16.4,
+     "ercPct": 45,
+     "biPct": 45,
+     "stations": 3,
+     "stationsListed": 3,
+     "missing": []
+    }
+   },
+   "source": "FEMS forecast ERC/BI",
+   "stations": 40
+  },
+  "2026-11-21": {
+   "rows": {
+    "SW-01": {
+     "ercVal": 16,
+     "biVal": 9,
+     "ercPct": 45,
+     "biPct": 45,
+     "stations": 3,
+     "stationsListed": 3,
+     "missing": []
+    },
+    "SW-02": {
+     "ercVal": 24,
+     "biVal": 16.5,
+     "ercPct": 45,
+     "biPct": 45,
+     "stations": 3,
+     "stationsListed": 3,
+     "missing": []
+    },
+    "SW-03": {
+     "ercVal": 38,
+     "biVal": 23.5,
+     "ercPct": 45,
+     "biPct": 45,
+     "stations": 1,
+     "stationsListed": 1,
+     "missing": []
+    },
+    "SW-04": {
+     "ercVal": 21.3,
+     "biVal": 17.2,
+     "ercPct": 45,
+     "biPct": 45,
+     "stations": 3,
+     "stationsListed": 3,
+     "missing": []
+    },
+    "SW-05": {
+     "ercVal": 19,
+     "biVal": 13.8,
+     "ercPct": 45,
+     "biPct": 45,
+     "stations": 3,
+     "stationsListed": 3,
+     "missing": []
+    },
+    "SW-06N": {
+     "ercVal": 22,
+     "biVal": 14.5,
+     "ercPct": 45,
+     "biPct": 45,
+     "stations": 2,
+     "stationsListed": 2,
+     "missing": []
+    },
+    "SW-06S": {
+     "ercVal": 25,
+     "biVal": 17.1,
+     "ercPct": 45,
+     "biPct": 45,
+     "stations": 4,
+     "stationsListed": 4,
+     "missing": []
+    },
+    "SW-07": {
+     "ercVal": 20.7,
+     "biVal": 18.3,
+     "ercPct": 45,
+     "biPct": 45,
+     "stations": 3,
+     "stationsListed": 3,
+     "missing": []
+    },
+    "SW-08": {
+     "ercVal": 22.8,
+     "biVal": 17.3,
+     "ercPct": 45,
+     "biPct": 45,
+     "stations": 4,
+     "stationsListed": 4,
+     "missing": []
+    },
+    "SW-09": {
+     "ercVal": 25.7,
+     "biVal": 22.4,
+     "ercPct": 45,
+     "biPct": 45,
+     "stations": 3,
+     "stationsListed": 3,
+     "missing": []
+    },
+    "SW-10": {
+     "ercVal": 22,
+     "biVal": 17.5,
+     "ercPct": 45,
+     "biPct": 45,
+     "stations": 2,
+     "stationsListed": 2,
+     "missing": []
+    },
+    "SW-11": {
+     "ercVal": 21,
+     "biVal": 20.4,
+     "ercPct": 45,
+     "biPct": 45,
+     "stations": 2,
+     "stationsListed": 2,
+     "missing": []
+    },
+    "SW-12": {
+     "ercVal": 23.7,
+     "biVal": 25.4,
+     "ercPct": 45,
+     "biPct": 45,
+     "stations": 3,
+     "stationsListed": 3,
+     "missing": []
+    },
+    "SW-13": {
+     "ercVal": 15,
+     "biVal": 20,
+     "ercPct": 45,
+     "biPct": 45,
+     "stations": 2,
+     "stationsListed": 2,
+     "missing": []
+    },
+    "SW-14N": {
+     "ercVal": 16,
+     "biVal": 21.4,
+     "ercPct": 45,
+     "biPct": 45,
+     "stations": 3,
+     "stationsListed": 3,
+     "missing": []
+    }
+   },
+   "source": "FEMS forecast ERC/BI",
+   "stations": 40
+  },
+  "2026-11-22": {
+   "rows": {
+    "SW-01": {
+     "ercVal": 17,
+     "biVal": 10.7,
+     "ercPct": 45,
+     "biPct": 45,
+     "stations": 3,
+     "stationsListed": 3,
+     "missing": []
+    },
+    "SW-02": {
+     "ercVal": 25.3,
+     "biVal": 18.3,
+     "ercPct": 45,
+     "biPct": 45,
+     "stations": 3,
+     "stationsListed": 3,
+     "missing": []
+    },
+    "SW-03": {
+     "ercVal": 40,
+     "biVal": 20.7,
+     "ercPct": 45,
+     "biPct": 45,
+     "stations": 1,
+     "stationsListed": 1,
+     "missing": []
+    },
+    "SW-04": {
+     "ercVal": 22.7,
+     "biVal": 15.8,
+     "ercPct": 45,
+     "biPct": 45,
+     "stations": 3,
+     "stationsListed": 3,
+     "missing": []
+    },
+    "SW-05": {
+     "ercVal": 20.3,
+     "biVal": 17.3,
+     "ercPct": 45,
+     "biPct": 45,
+     "stations": 3,
+     "stationsListed": 3,
+     "missing": []
+    },
+    "SW-06N": {
+     "ercVal": 24,
+     "biVal": 15.9,
+     "ercPct": 45,
+     "biPct": 45,
+     "stations": 2,
+     "stationsListed": 2,
+     "missing": []
+    },
+    "SW-06S": {
+     "ercVal": 26.8,
+     "biVal": 19.6,
+     "ercPct": 45,
+     "biPct": 45,
+     "stations": 4,
+     "stationsListed": 4,
+     "missing": []
+    },
+    "SW-07": {
+     "ercVal": 20,
+     "biVal": 13.7,
+     "ercPct": 45,
+     "biPct": 45,
+     "stations": 3,
+     "stationsListed": 3,
+     "missing": []
+    },
+    "SW-08": {
+     "ercVal": 23.8,
+     "biVal": 17.9,
+     "ercPct": 45,
+     "biPct": 45,
+     "stations": 4,
+     "stationsListed": 4,
+     "missing": []
+    },
+    "SW-09": {
+     "ercVal": 27,
+     "biVal": 17.9,
+     "ercPct": 45,
+     "biPct": 45,
+     "stations": 3,
+     "stationsListed": 3,
+     "missing": []
+    },
+    "SW-10": {
+     "ercVal": 18.5,
+     "biVal": 9.3,
+     "ercPct": 45,
+     "biPct": 45,
+     "stations": 2,
+     "stationsListed": 2,
+     "missing": []
+    },
+    "SW-11": {
+     "ercVal": 21.5,
+     "biVal": 15.9,
+     "ercPct": 45,
+     "biPct": 45,
+     "stations": 2,
+     "stationsListed": 2,
+     "missing": []
+    },
+    "SW-12": {
+     "ercVal": 23.7,
+     "biVal": 16.4,
+     "ercPct": 45,
+     "biPct": 45,
+     "stations": 3,
+     "stationsListed": 3,
+     "missing": []
+    },
+    "SW-13": {
+     "ercVal": 15,
+     "biVal": 12.9,
+     "ercPct": 45,
+     "biPct": 45,
+     "stations": 2,
+     "stationsListed": 2,
+     "missing": []
+    },
+    "SW-14N": {
+     "ercVal": 17,
+     "biVal": 14.3,
+     "ercPct": 45,
+     "biPct": 45,
+     "stations": 3,
+     "stationsListed": 3,
+     "missing": []
+    }
+   },
+   "source": "FEMS forecast ERC/BI",
+   "stations": 40
+  },
+  "2026-11-23": {
+   "rows": {
+    "SW-01": {
+     "ercVal": 16,
+     "biVal": 9.9,
+     "ercPct": 45,
+     "biPct": 45,
+     "stations": 3,
+     "stationsListed": 3,
+     "missing": []
+    },
+    "SW-02": {
+     "ercVal": 25.3,
+     "biVal": 17.6,
+     "ercPct": 45,
+     "biPct": 45,
+     "stations": 3,
+     "stationsListed": 3,
+     "missing": []
+    },
+    "SW-03": {
+     "ercVal": 40,
+     "biVal": 24.5,
+     "ercPct": 45,
+     "biPct": 45,
+     "stations": 1,
+     "stationsListed": 1,
+     "missing": []
+    },
+    "SW-04": {
+     "ercVal": 22.3,
+     "biVal": 15.6,
+     "ercPct": 45,
+     "biPct": 45,
+     "stations": 3,
+     "stationsListed": 3,
+     "missing": []
+    },
+    "SW-05": {
+     "ercVal": 20,
+     "biVal": 16.9,
+     "ercPct": 45,
+     "biPct": 45,
+     "stations": 3,
+     "stationsListed": 3,
+     "missing": []
+    },
+    "SW-06N": {
+     "ercVal": 24.5,
+     "biVal": 16.5,
+     "ercPct": 45,
+     "biPct": 45,
+     "stations": 2,
+     "stationsListed": 2,
+     "missing": []
+    },
+    "SW-06S": {
+     "ercVal": 27.5,
+     "biVal": 20.5,
+     "ercPct": 45,
+     "biPct": 45,
+     "stations": 4,
+     "stationsListed": 4,
+     "missing": []
+    },
+    "SW-07": {
+     "ercVal": 21.3,
+     "biVal": 14.9,
+     "ercPct": 45,
+     "biPct": 45,
+     "stations": 3,
+     "stationsListed": 3,
+     "missing": []
+    },
+    "SW-08": {
+     "ercVal": 23.3,
+     "biVal": 18.4,
+     "ercPct": 45,
+     "biPct": 45,
+     "stations": 4,
+     "stationsListed": 4,
+     "missing": []
+    },
+    "SW-09": {
+     "ercVal": 27,
+     "biVal": 19,
+     "ercPct": 45,
+     "biPct": 45,
+     "stations": 3,
+     "stationsListed": 3,
+     "missing": []
+    },
+    "SW-10": {
+     "ercVal": 21.5,
+     "biVal": 16.3,
+     "ercPct": 45,
+     "biPct": 45,
+     "stations": 2,
+     "stationsListed": 2,
+     "missing": []
+    },
+    "SW-11": {
+     "ercVal": 21,
+     "biVal": 16,
+     "ercPct": 45,
+     "biPct": 45,
+     "stations": 2,
+     "stationsListed": 2,
+     "missing": []
+    },
+    "SW-12": {
+     "ercVal": 23,
+     "biVal": 16.1,
+     "ercPct": 45,
+     "biPct": 45,
+     "stations": 3,
+     "stationsListed": 3,
+     "missing": []
+    },
+    "SW-13": {
+     "ercVal": 15,
+     "biVal": 16,
+     "ercPct": 45,
+     "biPct": 45,
+     "stations": 2,
+     "stationsListed": 2,
+     "missing": []
+    },
+    "SW-14N": {
+     "ercVal": 16.3,
+     "biVal": 15.2,
+     "ercPct": 45,
+     "biPct": 45,
+     "stations": 3,
+     "stationsListed": 3,
+     "missing": []
+    }
+   },
+   "source": "FEMS forecast ERC/BI",
+   "stations": 40
+  },
+  "2026-11-24": {
+   "rows": {
+    "SW-01": {
+     "ercVal": 17,
+     "biVal": 10,
+     "ercPct": 45,
+     "biPct": 45,
+     "stations": 3,
+     "stationsListed": 3,
+     "missing": []
+    },
+    "SW-02": {
+     "ercVal": 26.3,
+     "biVal": 16.7,
+     "ercPct": 45,
+     "biPct": 45,
+     "stations": 3,
+     "stationsListed": 3,
+     "missing": []
+    },
+    "SW-03": {
+     "ercVal": 41,
+     "biVal": 22.9,
+     "ercPct": 45,
+     "biPct": 45,
+     "stations": 1,
+     "stationsListed": 1,
+     "missing": []
+    },
+    "SW-04": {
+     "ercVal": 22.3,
+     "biVal": 13.7,
+     "ercPct": 45,
+     "biPct": 45,
+     "stations": 3,
+     "stationsListed": 3,
+     "missing": []
+    },
+    "SW-05": {
+     "ercVal": 21.7,
+     "biVal": 14.4,
+     "ercPct": 45,
+     "biPct": 45,
+     "stations": 3,
+     "stationsListed": 3,
+     "missing": []
+    },
+    "SW-06N": {
+     "ercVal": 25.5,
+     "biVal": 15.4,
+     "ercPct": 45,
+     "biPct": 45,
+     "stations": 2,
+     "stationsListed": 2,
+     "missing": []
+    },
+    "SW-06S": {
+     "ercVal": 29,
+     "biVal": 18.7,
+     "ercPct": 45,
+     "biPct": 45,
+     "stations": 4,
+     "stationsListed": 4,
+     "missing": []
+    },
+    "SW-07": {
+     "ercVal": 21.7,
+     "biVal": 13.8,
+     "ercPct": 45,
+     "biPct": 45,
+     "stations": 3,
+     "stationsListed": 3,
+     "missing": []
+    },
+    "SW-08": {
+     "ercVal": 24.5,
+     "biVal": 15,
+     "ercPct": 45,
+     "biPct": 45,
+     "stations": 4,
+     "stationsListed": 4,
+     "missing": []
+    },
+    "SW-09": {
+     "ercVal": 28,
+     "biVal": 17.7,
+     "ercPct": 45,
+     "biPct": 45,
+     "stations": 3,
+     "stationsListed": 3,
+     "missing": []
+    },
+    "SW-10": {
+     "ercVal": 18,
+     "biVal": 8.1,
+     "ercPct": 45,
+     "biPct": 45,
+     "stations": 2,
+     "stationsListed": 2,
+     "missing": []
+    },
+    "SW-11": {
+     "ercVal": 21.5,
+     "biVal": 14.7,
+     "ercPct": 45,
+     "biPct": 45,
+     "stations": 2,
+     "stationsListed": 2,
+     "missing": []
+    },
+    "SW-12": {
+     "ercVal": 23.7,
+     "biVal": 15.5,
+     "ercPct": 45,
+     "biPct": 45,
+     "stations": 3,
+     "stationsListed": 3,
+     "missing": []
+    },
+    "SW-13": {
+     "ercVal": 15,
+     "biVal": 13,
+     "ercPct": 45,
+     "biPct": 45,
+     "stations": 2,
+     "stationsListed": 2,
+     "missing": []
+    },
+    "SW-14N": {
+     "ercVal": 17,
+     "biVal": 14.2,
+     "ercPct": 45,
+     "biPct": 45,
+     "stations": 3,
+     "stationsListed": 3,
+     "missing": []
+    }
+   },
+   "source": "FEMS forecast ERC/BI",
+   "stations": 40
+  },
+  "2026-11-25": {
+   "rows": {
+    "SW-01": {
+     "ercVal": 16,
+     "biVal": 9.7,
+     "ercPct": 45,
+     "biPct": 45,
+     "stations": 3,
+     "stationsListed": 3,
+     "missing": []
+    },
+    "SW-02": {
+     "ercVal": 26.7,
+     "biVal": 18.4,
+     "ercPct": 45,
+     "biPct": 45,
+     "stations": 3,
+     "stationsListed": 3,
+     "missing": []
+    },
+    "SW-03": {
+     "ercVal": 42,
+     "biVal": 26.2,
+     "ercPct": 45,
+     "biPct": 45,
+     "stations": 1,
+     "stationsListed": 1,
+     "missing": []
+    },
+    "SW-04": {
+     "ercVal": 22.7,
+     "biVal": 15,
+     "ercPct": 45,
+     "biPct": 45,
+     "stations": 3,
+     "stationsListed": 3,
+     "missing": []
+    },
+    "SW-05": {
+     "ercVal": 22,
+     "biVal": 16.3,
+     "ercPct": 45,
+     "biPct": 45,
+     "stations": 3,
+     "stationsListed": 3,
+     "missing": []
+    },
+    "SW-06N": {
+     "ercVal": 26.5,
+     "biVal": 16.6,
+     "ercPct": 45,
+     "biPct": 45,
+     "stations": 2,
+     "stationsListed": 2,
+     "missing": []
+    },
+    "SW-06S": {
+     "ercVal": 30,
+     "biVal": 21.1,
+     "ercPct": 45,
+     "biPct": 45,
+     "stations": 4,
+     "stationsListed": 4,
+     "missing": []
+    },
+    "SW-07": {
+     "ercVal": 22.3,
+     "biVal": 14.4,
+     "ercPct": 45,
+     "biPct": 45,
+     "stations": 3,
+     "stationsListed": 3,
+     "missing": []
+    },
+    "SW-08": {
+     "ercVal": 25.3,
+     "biVal": 17.5,
+     "ercPct": 45,
+     "biPct": 45,
+     "stations": 4,
+     "stationsListed": 4,
+     "missing": []
+    },
+    "SW-09": {
+     "ercVal": 28.3,
+     "biVal": 18.1,
+     "ercPct": 45,
+     "biPct": 45,
+     "stations": 3,
+     "stationsListed": 3,
+     "missing": []
+    },
+    "SW-10": {
+     "ercVal": 17.5,
+     "biVal": 9.7,
+     "ercPct": 45,
+     "biPct": 45,
+     "stations": 2,
+     "stationsListed": 2,
+     "missing": []
+    },
+    "SW-11": {
+     "ercVal": 22,
+     "biVal": 16.2,
+     "ercPct": 45,
+     "biPct": 45,
+     "stations": 2,
+     "stationsListed": 2,
+     "missing": []
+    },
+    "SW-12": {
+     "ercVal": 24,
+     "biVal": 15.5,
+     "ercPct": 45,
+     "biPct": 45,
+     "stations": 3,
+     "stationsListed": 3,
+     "missing": []
+    },
+    "SW-13": {
+     "ercVal": 12.5,
+     "biVal": 11.4,
+     "ercPct": 45,
+     "biPct": 45,
+     "stations": 2,
+     "stationsListed": 2,
+     "missing": []
+    },
+    "SW-14N": {
+     "ercVal": 14,
+     "biVal": 12.2,
+     "ercPct": 45,
+     "biPct": 45,
+     "stations": 3,
+     "stationsListed": 3,
+     "missing": []
+    }
+   },
+   "source": "FEMS forecast ERC/BI",
+   "stations": 40
+  }
+ },
+ "actualPl": {
+  "pl": 1,
+  "date": "2026-11-19",
+  "asOf": "",
+  "source": "SWCC published PL list, carried forward",
+  "checkedAt": "2026-11-19T09:48",
+  "carried": true,
+  "carriedFrom": "2026-11-16",
+  "note": "NICC: the GACC Preparedness Levels table is empty today; SWCC: no number under the Preparedness Level header"
+ }
 }
