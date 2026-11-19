@@ -1,10 +1,10 @@
 {
  "schema": 1,
  "meta": {
-  "asOf": "2026-11-18T08:59",
+  "asOf": "2026-11-18T22:08",
   "preparedBy": "",
   "notes": "Seeded from 2026_SWA_PL_Dashboard_V3_SHOULDER_SEASON_MASTER.xlsx",
-  "source": "automated pull 2026-11-18T08:59"
+  "source": "automated pull 2026-11-18T22:08"
  },
  "preset": "standard",
  "weights": {
@@ -18,14 +18,14 @@
   "rating": "Minimum",
   "complex": 0,
   "t3": 0,
-  "updated": "2026-11-18T08:58",
+  "updated": "2026-11-18T22:08",
   "escapes": 0,
   "escapeList": [],
-  "fetchedAt": "2026-11-18T08:58",
+  "fetchedAt": "2026-11-18T22:08",
   "source": "WFIGS active incidents (auto)",
   "incidents": [],
-  "activeTotal": 0,
-  "unknownType": 0,
+  "activeTotal": 1,
+  "unknownType": 1,
   "startsAvg3": 0.7
  },
  "imts": [
@@ -162,7 +162,7 @@
    "remarks": ""
   }
  ],
- "imtsUpdated": "2026-11-18T08:58",
+ "imtsUpdated": "2026-11-18T22:08",
  "crews": [
   {
    "name": "Aravaipa",
@@ -426,7 +426,7 @@
   }
  ],
  "ooaCrews": [],
- "crewsUpdated": "2026-11-18T08:58",
+ "crewsUpdated": "2026-11-18T22:08",
  "outlook": {
   "startDate": "2026-11-18",
   "values": {
@@ -568,7 +568,7 @@
   },
   "updated": "2026-11-18",
   "source": "NPSG 7-Day (auto)",
-  "fetchedAt": "2026-11-18T08:58",
+  "fetchedAt": "2026-11-18T22:08",
   "missing": []
  },
  "danger": {
@@ -670,12 +670,12 @@
  },
  "imtsSource": {
   "source": "SWCC SharePoint (auto)",
-  "fetchedAt": "2026-11-18T08:58",
+  "fetchedAt": "2026-11-18T22:08",
   "lastUpdate": "0700 11/18/2026 DH"
  },
  "crewsSource": {
   "source": "SWCC SharePoint (auto)",
-  "fetchedAt": "2026-11-18T08:58",
+  "fetchedAt": "2026-11-18T22:08",
   "lastUpdate": "11/12/2026 07:00",
   "ooaLastUpdate": "11/12/2026 07:00"
  },
@@ -828,7 +828,7 @@
   ],
   "placedByPsa": true,
   "layer": "https://services3.arcgis.com/T4QMspbfLg3qTGWY/arcgis/rest/services/WFIGS_Incident_Locations_YearToDate/FeatureServer/0",
-  "fetchedAt": "2026-11-18T08:58",
+  "fetchedAt": "2026-11-18T22:08",
   "source": "WFIGS incident locations (auto)"
  },
  "raws": {
@@ -2826,7 +2826,7 @@
   ],
   "asosError": "mesonet.agron.iastate.edu answered 429",
   "source": "FEMS RAWS + (no) IEM ASOS/AWOS observations (auto, quality-checked)",
-  "fetchedAt": "2026-11-18T08:59"
+  "fetchedAt": "2026-11-18T22:08"
  },
  "femsNfdr": {
   "date": "2026-11-17",
@@ -2837,8 +2837,8 @@
     "stationsListed": 3,
     "erc": 8.1,
     "bi": 0,
-    "ercMax": 15.3,
-    "biMax": 11.3
+    "ercMax": 15.1,
+    "biMax": 11.2
    },
    "SW-02": {
     "stations": 3,
@@ -2867,10 +2867,10 @@
    "SW-05": {
     "stations": 3,
     "stationsListed": 3,
-    "erc": 10.5,
+    "erc": 10.4,
     "bi": 8.5,
     "ercMax": 13.3,
-    "biMax": 11.1
+    "biMax": 11
    },
    "SW-06N": {
     "stations": 2,
@@ -2947,9 +2947,9 @@
    "SW-14N": {
     "stations": 3,
     "stationsListed": 3,
-    "erc": 7.4,
+    "erc": 7.2,
     "bi": 2.3,
-    "ercMax": 7.8,
+    "ercMax": 7.7,
     "biMax": 2.9
    }
   },
@@ -2971,8 +2971,8 @@
     "hour": "13:00",
     "erc": 6.6,
     "bi": 0,
-    "ercMax": 11.4,
-    "biMax": 7.1
+    "ercMax": 11.1,
+    "biMax": 7
    },
    {
     "psa": "SW-01",
@@ -2992,7 +2992,7 @@
     "erc": 17.5,
     "bi": 15.1,
     "ercMax": 21.3,
-    "biMax": 17.8
+    "biMax": 17.7
    },
    {
     "psa": "SW-02",
@@ -3012,7 +3012,7 @@
     "erc": 15.6,
     "bi": 7.9,
     "ercMax": 24.3,
-    "biMax": 18.9
+    "biMax": 18.8
    },
    {
     "psa": "SW-03",
@@ -3059,7 +3059,7 @@
     "id": 20209,
     "name": "Flagstaff",
     "hour": "13:00",
-    "erc": 2.6,
+    "erc": 2.5,
     "bi": 0,
     "ercMax": 9.5,
     "biMax": 3.8
@@ -3349,9 +3349,9 @@
     "id": 293101,
     "name": "Batdraw",
     "hour": "13:00",
-    "erc": 7.3,
+    "erc": 6.8,
     "bi": 0,
-    "ercMax": 7.6,
+    "ercMax": 7.2,
     "biMax": 0
    },
    {
@@ -3359,7 +3359,7 @@
     "id": 293104,
     "name": "Caprock",
     "hour": "13:00",
-    "erc": 7.2,
+    "erc": 7.1,
     "bi": 0,
     "ercMax": 7.7,
     "biMax": 0
@@ -3406,6 +3406,6 @@
    }
   ],
   "source": "FEMS NFDRS observations (auto)",
-  "fetchedAt": "2026-11-18T08:59"
+  "fetchedAt": "2026-11-18T22:08"
  }
 }
