@@ -23,13 +23,19 @@ on:
     - cron: "7 5 * * *"    # 11 PM MDT / 10 PM MST (backups)
   workflow_dispatch:        # "Run workflow" button on the Actions tab runs it immediately
     inputs:
-      redo_weather_from:
-        description: "Optional: re-pull and re-check RAWS + ASOS/AWOS from this date (YYYY-MM-DD) up to the day before yesterday"
+      backfill_from:
+        description: "Optional: re-pull past days from this date (YYYY-MM-DD) to yesterday, e.g. 2026-01-01"
         required: false
         default: ""
+      backfill_what:
+        description: "What to re-pull for those days"
+        type: choice
+        options: ["ERC/BI and weather", "ERC/BI only", "weather only"]
+        default: "ERC/BI and weather"
   push:                     # uploading an ERC/BI file to the uploads/ folder updates the site right away
     paths:
       - "uploads/**"
+      - "data/erc_bi_breakpoints.csv"   # editing the breakpoints recalculates the PSA percentiles right away
 
 permissions:
   contents: write
@@ -41,6 +47,7 @@ concurrency:
 jobs:
   update:
     runs-on: ubuntu-latest
+    timeout-minutes: 350   # a backfill from Jan 1 re-pulls a year of weather and can take a few hours
     steps:
       - uses: actions/checkout@v4
         with:
@@ -67,15 +74,17 @@ jobs:
 
       - name: Check the calculations
         if: steps.when.outputs.run == 'true'
-        run: node tests/calc.test.js && node tests/sources.test.js && node tests/archive.test.js && node tests/review.test.js
+        run: node tests/calc.test.js && node tests/sources.test.js && node tests/archive.test.js && node tests/review.test.js && node tests/nfdrs.test.js
 
       - name: Pull data, apply uploaded ERC/BI file, archive the run
         if: steps.when.outputs.run == 'true'
         continue-on-error: true   # still build the briefing from the last good data if a source is down
         env:
-          REDO: ${{ github.event.inputs.redo_weather_from }}
+          FROM: ${{ github.event.inputs.backfill_from }}
+          WHAT: ${{ github.event.inputs.backfill_what }}
         run: |
-          if [[ "$REDO" =~ ^[0-9]{4}-[0-9]{2}-[0-9]{2}$ ]]; then node scripts/update-data.mjs "--redo-weather-from=$REDO"
+          case "$WHAT" in "ERC/BI only") W=ercy ;; "weather only") W=weather ;; *) W=all ;; esac
+          if [[ "$FROM" =~ ^[0-9]{4}-[0-9]{2}-[0-9]{2}$ ]]; then node scripts/update-data.mjs "--backfill-from=$FROM" "--backfill-what=$W"
           else node scripts/update-data.mjs; fi
 
       - name: Build PDF and Excel briefing
