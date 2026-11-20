@@ -2065,3 +2065,11 @@ date,psa,network,station_id,station,field,hour,value,reason,action
 2026-11-18,SW-13,RAWS,291101,MILLS CANYON,min RH,,14,31 away from the other stations' median (45),dropped
 2026-11-18,SW-13,ASOS/AWOS,ASOS:CAO,Clayton (CAO),min RH,,18,41 away from the other stations' median (59),dropped
 2026-11-18,SW-13,ASOS/AWOS,ASOS:TCC,TUCUMCARI MUNICIPAL (TCC),min RH,,27,33 away from the other stations' median (60),dropped
+2026-11-19,SW-11,RAWS,291408,SANDIA LAB,gust,23:53,78,over 75 mph; no station nearby gusted 47+ mph,dropped
+2026-11-19,SW-11,RAWS,291408,SANDIA LAB,gust,00:53,0,lower than the sustained wind (5 mph),dropped
+2026-11-19,SW-11,RAWS,291408,SANDIA LAB,gust,01:53,0,lower than the sustained wind (4 mph),dropped
+2026-11-19,SW-11,RAWS,291408,SANDIA LAB,gust,02:53,0,lower than the sustained wind (3 mph),dropped
+2026-11-19,SW-11,RAWS,291408,SANDIA LAB,gust,03:53,0,lower than the sustained wind (6 mph),dropped
+2026-11-19,SW-11,RAWS,291408,SANDIA LAB,gust,04:53,0,lower than the sustained wind (11 mph),dropped
+2026-11-19,SW-11,RAWS,291408,SANDIA LAB,gust,05:53,0,lower than the sustained wind (11 mph),dropped
+2026-11-19,SW-11,RAWS,291408,SANDIA LAB,gust,06:53,0,lower than the sustained wind (7 mph),dropped
