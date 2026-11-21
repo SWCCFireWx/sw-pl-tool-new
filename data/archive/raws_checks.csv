@@ -2073,3 +2073,4 @@ date,psa,network,station_id,station,field,hour,value,reason,action
 2026-11-19,SW-11,RAWS,291408,SANDIA LAB,gust,04:53,0,lower than the sustained wind (11 mph),dropped
 2026-11-19,SW-11,RAWS,291408,SANDIA LAB,gust,05:53,0,lower than the sustained wind (11 mph),dropped
 2026-11-19,SW-11,RAWS,291408,SANDIA LAB,gust,06:53,0,lower than the sustained wind (7 mph),dropped
+2026-11-20,SW-02,ASOS/AWOS,ASOS:IFP,BULL HEAD CITY (IFP),wind,03:00,58,"spike: 9 the hour before, 8 the hour after",dropped
