@@ -1,10 +1,10 @@
 {
  "schema": 1,
  "meta": {
-  "asOf": "2026-11-23T08:01",
+  "asOf": "2026-11-23T21:03",
   "preparedBy": "",
   "notes": "Seeded from 2026_SWA_PL_Dashboard_V3_SHOULDER_SEASON_MASTER.xlsx",
-  "source": "automated pull 2026-11-23T08:01"
+  "source": "automated pull 2026-11-23T21:03"
  },
  "preset": "standard",
  "weights": {
@@ -18,13 +18,13 @@
   "rating": "Minimum",
   "complex": 0,
   "t3": 0,
-  "updated": "2026-11-23T08:00",
+  "updated": "2026-11-23T21:03",
   "escapes": 0,
   "escapeList": [],
-  "fetchedAt": "2026-11-23T08:00",
+  "fetchedAt": "2026-11-23T21:03",
   "source": "WFIGS active incidents (auto)",
   "incidents": [],
-  "activeTotal": 0,
+  "activeTotal": 1,
   "unknownType": 0,
   "startsAvg3": 0.7,
   "byAcres": [],
@@ -188,7 +188,7 @@
    "remarks": ""
   }
  ],
- "imtsUpdated": "2026-11-23T08:00",
+ "imtsUpdated": "2026-11-23T21:03",
  "crews": [
   {
    "name": "Aravaipa",
@@ -452,7 +452,7 @@
   }
  ],
  "ooaCrews": [],
- "crewsUpdated": "2026-11-23T08:00",
+ "crewsUpdated": "2026-11-23T21:03",
  "outlook": {
   "startDate": "2026-11-23",
   "values": {
@@ -594,54 +594,8 @@
   },
   "updated": "2026-11-23",
   "source": "NPSG 7-Day (auto)",
-  "fetchedAt": "2026-11-23T08:00",
-  "missing": [
-   "SW01 day 5",
-   "SW01 day 6",
-   "SW01 day 7",
-   "SW02 day 5",
-   "SW02 day 6",
-   "SW02 day 7",
-   "SW03 day 5",
-   "SW03 day 6",
-   "SW03 day 7",
-   "SW04 day 5",
-   "SW04 day 6",
-   "SW04 day 7",
-   "SW05 day 5",
-   "SW05 day 6",
-   "SW05 day 7",
-   "SW06N day 5",
-   "SW06N day 6",
-   "SW06N day 7",
-   "SW06S day 5",
-   "SW06S day 6",
-   "SW06S day 7",
-   "SW07 day 5",
-   "SW07 day 6",
-   "SW07 day 7",
-   "SW08 day 5",
-   "SW08 day 6",
-   "SW08 day 7",
-   "SW09 day 5",
-   "SW09 day 6",
-   "SW09 day 7",
-   "SW10 day 5",
-   "SW10 day 6",
-   "SW10 day 7",
-   "SW11 day 5",
-   "SW11 day 6",
-   "SW11 day 7",
-   "SW12 day 5",
-   "SW12 day 6",
-   "SW12 day 7",
-   "SW13 day 5",
-   "SW13 day 6",
-   "SW13 day 7",
-   "SW14N day 5",
-   "SW14N day 6",
-   "SW14N day 7"
-  ]
+  "fetchedAt": "2026-11-23T21:03",
+  "missing": []
  },
  "danger": {
   "date": "2026-11-22",
@@ -1113,17 +1067,17 @@
    }
   ],
   "source": "FEMS NFDR daily summary (auto)",
-  "fetchedAt": "2026-11-23T08:00",
+  "fetchedAt": "2026-11-23T21:03",
   "breakpoints": "data/erc_bi_breakpoints.csv"
  },
  "imtsSource": {
   "source": "SWCC SharePoint (auto)",
-  "fetchedAt": "2026-11-23T08:00",
+  "fetchedAt": "2026-11-23T21:03",
   "lastUpdate": "0700 11/19/2026 DH"
  },
  "crewsSource": {
   "source": "SWCC SharePoint (auto)",
-  "fetchedAt": "2026-11-23T08:00",
+  "fetchedAt": "2026-11-23T21:03",
   "lastUpdate": "11/12/2026 07:00",
   "ooaLastUpdate": "11/12/2026 07:00",
   "t2iaLastUpdate": "11/12/2026 07:00",
@@ -1299,7 +1253,7 @@
   ],
   "placedByPsa": true,
   "layer": "https://services3.arcgis.com/T4QMspbfLg3qTGWY/arcgis/rest/services/WFIGS_Incident_Locations_YearToDate/FeatureServer/0",
-  "fetchedAt": "2026-11-23T08:00",
+  "fetchedAt": "2026-11-23T21:03",
   "source": "WFIGS incident locations (auto)"
  },
  "raws": {
@@ -4090,7 +4044,7 @@
   ],
   "asosError": "",
   "source": "FEMS RAWS + IEM ASOS/AWOS observations (auto, quality-checked)",
-  "fetchedAt": "2026-11-23T08:00"
+  "fetchedAt": "2026-11-23T21:03"
  },
  "femsNfdr": {
   "date": "2026-11-22",
@@ -4670,61 +4624,61 @@
    }
   ],
   "source": "FEMS NFDRS observations (auto)",
-  "fetchedAt": "2026-11-23T08:00"
+  "fetchedAt": "2026-11-23T21:03"
  },
  "health": {
-  "run": "2026-11-23T08:00",
+  "run": "2026-11-23T21:03",
   "trigger": "schedule",
   "steps": {
    "7-Day outlook": {
     "ok": true,
-    "at": "2026-11-23T08:00",
-    "secs": 0
+    "at": "2026-11-23T21:03",
+    "secs": 1
    },
    "Crews (SharePoint)": {
     "ok": true,
-    "at": "2026-11-23T08:00",
+    "at": "2026-11-23T21:03",
     "secs": 0
    },
    "IMTs (SharePoint)": {
     "ok": true,
-    "at": "2026-11-23T08:00",
+    "at": "2026-11-23T21:03",
     "secs": 0
    },
    "Fire Activity (WFIGS active incidents)": {
     "ok": true,
-    "at": "2026-11-23T08:00",
+    "at": "2026-11-23T21:03",
     "secs": 0
    },
    "Fire starts (WFIGS)": {
     "ok": true,
-    "at": "2026-11-23T08:00",
+    "at": "2026-11-23T21:03",
     "secs": 0
    },
    "RAWS + ASOS/AWOS weather obs": {
     "ok": true,
-    "at": "2026-11-23T08:00",
-    "secs": 46
+    "at": "2026-11-23T21:03",
+    "secs": 23
    },
    "FEMS ERC/BI (fuel model Y)": {
     "ok": true,
-    "at": "2026-11-23T08:00",
+    "at": "2026-11-23T21:03",
     "secs": 0
    },
    "PSA ERCy/BI (FEMS daily summary, 40 stations)": {
     "ok": true,
-    "at": "2026-11-23T08:00",
+    "at": "2026-11-23T21:03",
     "secs": 0
    },
    "FEMS forecast ERC/BI (next 6 days)": {
     "ok": true,
-    "at": "2026-11-23T08:00",
+    "at": "2026-11-23T21:03",
     "secs": 0
    },
    "Actual SW PL (NICC / SWCC)": {
     "ok": true,
-    "at": "2026-11-23T08:00",
-    "secs": 0
+    "at": "2026-11-23T21:03",
+    "secs": 1
    },
    "Filling in ERC/BI since 2026-01-01": {
     "ok": true,
@@ -4741,7 +4695,7 @@
    "ercy": 0,
    "weather": 0,
    "from": "2026-01-01",
-   "checked": "2026-11-23T08:01"
+   "checked": "2026-11-23T21:03"
   },
   "backfillGaveUp": {
    "ercy": [],
@@ -4754,7 +4708,7 @@
   "breakpoints": "data/erc_bi_breakpoints.csv"
  },
  "forecast": {
-  "issued": "2026-11-23T08:01",
+  "issued": "2026-11-23T21:03",
   "criteria": {
    "label": "2026-11-19c",
    "fingerprint": "89e2f9fe"
@@ -4900,7 +4854,7 @@
   "since": "2026-11-19T09:26",
   "pending": null,
   "calculated": 1,
-  "checked": "2026-11-23T08:01"
+  "checked": "2026-11-23T21:03"
  },
  "criteriaChanges": [
   {
@@ -5936,7 +5890,7 @@
   "date": "2026-11-23",
   "asOf": "",
   "source": "SWCC published PL list, carried forward",
-  "checkedAt": "2026-11-23T08:00",
+  "checkedAt": "2026-11-23T21:03",
   "carried": true,
   "carriedFrom": "2026-11-16",
   "note": "NICC: the GACC Preparedness Levels table is empty today; SWCC: no number under the Preparedness Level header"
